@@ -997,3 +997,5 @@ vendors:
 css: css
 js: js
 images: images
+
+canvas_nest: true
