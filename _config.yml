@@ -6,7 +6,7 @@
 title: jingyier
 subtitle: 小白，火影男，普通男大
 description: 喜欢打篮球和乒乓球，也很喜欢睡觉
-keywords: "专注瞌睡十八年，深入浅出二次元，平平无奇还没钱"
+keywords: "不过是些许风霜罢了"
 author: jingyier
 language: zh-CN
 timezone: ''
@@ -98,6 +98,13 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: next
 
+#search
+search:
+  path: search.xml
+  field: post
+  format: html
+  limit: 10000
+
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
@@ -105,9 +112,4 @@ deploy:
   repository: git@github.com:jingyier/jingyier.github.io.git
   branch: gh-pages
   
-#search
-search:
-   path: search.xml
-   field: post
-   format: html
-   limit: 10000
+
