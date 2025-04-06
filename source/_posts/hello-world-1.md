@@ -1,7 +1,8 @@
 ---
 title: hello-world-1
 date: 2025-04-02 21:47:55
-tags:
+tags: [生活]
+categories: [随笔]
 ---
 ## 随笔
 
