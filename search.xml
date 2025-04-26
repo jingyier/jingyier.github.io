@@ -1,6 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2025/03/28/hello-world/</url>
+    <content><![CDATA[<p>这篇博客简述一下整个博客框架的搭建流程，该文本不包括站点信息的配置。流程如下：</p>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>首先我们应该安装Node.js,下载地址如下：<a href="https://nodejs.org/zh-cn/download/">nodejs</a>；<br>安装完成之后我们要确保环境变量配置好，可以正常使用npm命令。</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>Hexo是一个博客框架，其官方还提供了一个命令行工具，可以快速创建项目、页面、编译、部署Hexo博客，接下来我们应该安装Hexo的命令行工具。</p>
+<h3 id="安装命令如下"><a href="#安装命令如下" class="headerlink" title="安装命令如下"></a>安装命令如下</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>安装完成后，确保环境变量配置好，可以正常使用hexo命令。</p>
+<h2 id="用hexo命令行创建项目"><a href="#用hexo命令行创建项目" class="headerlink" title="用hexo命令行创建项目"></a>用hexo命令行创建项目</h2><h3 id="创建新项目"><a href="#创建新项目" class="headerlink" title="创建新项目"></a>创建新项目</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>接下来我们进入新生成的文件夹里，调用hexo的generate命令，这样就将Hexo编译生成HTML代码，命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>然后我们可以通过hexo提供的serve命令使博客在本地运行起来，命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo serve</span><br></pre></td></tr></table></figure>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>那么怎么把这个页面部署到Github Pages上面呢？hexo已经提供了一个命令可以帮助我们将博客一键部署，但是在运用这个命令之前，我们应该安装hexo-deployer-git插件,执行的安装命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save </span><br></pre></td></tr></table></figure>
+<p>安装成功后，执行部署命令；</p>
+<h3 id="执行部署命令"><a href="#执行部署命令" class="headerlink" title="执行部署命令"></a>执行部署命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>这样一来我们的博客就成功部署到 Github Pages 上面了，此时我们已经可以通过访问 Github Repository 的同名链接，就能看到和本地相同的博客内容了。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总而言之该博客的构建并不困难，过程并非复杂繁琐，但对于一个我这样的新手而言仍然需要有足够的耐心去解决一个个奇奇怪怪的小问题，坚持下去就好！</p>
+]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>hello-world-1</title>
     <url>/2025/04/02/hello-world-1/</url>
     <content><![CDATA[<h2 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h2><p>抬头一看，整个黑幕布似的天空星星点点的闪烁着，刚开始只能看见一个又一个北斗七星一样的连串的星链。<br>再次出去，从四合院中透过去的方形的天空上，是无数颗斑斓的，跳动的星星，有微弱的细小的闪动着的，也有硕大明亮的，有金黄麦田一样热烈的黄色星星，也有白练雪莲般一样纯洁的，星星的排布是大自然最得意的一笔，细密而又大小不一，间隙而又或明或暗。</p>
@@ -13,6 +41,41 @@
       </categories>
       <tags>
         <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>HTML简单总结</title>
+    <url>/2025/04/26/HTML%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h2 id="HTML基础知识"><a href="#HTML基础知识" class="headerlink" title="HTML基础知识"></a>HTML基础知识</h2><ul>
+<li>HTML 代码是由 “标签” 构成的；</li>
+<li>整体的 HTML 代码是由一对 html 包裹的；</li>
+<li>head 标签是页面的头部，标签中写页面的属性；</li>
+<li>body 标签是页面的主体，标签中写的是页面显示的内容；</li>
+<li>title 标签中写的是页面的标题。</li>
+</ul>
+<h4 id="默认页面模板：！-tab-生成代码如下"><a href="#默认页面模板：！-tab-生成代码如下" class="headerlink" title="默认页面模板：！+tab,生成代码如下"></a>默认页面模板：！+tab,生成代码如下</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">  &lt;title&gt;Document&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">  </span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="一、常见标签"><a href="#一、常见标签" class="headerlink" title="一、常见标签"></a>一、常见标签</h3><h4 id="1-注释标签"><a href="#1-注释标签" class="headerlink" title="1.注释标签"></a>1.注释标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--我是注释--&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="2-标题标签"><a href="#2-标题标签" class="headerlink" title="2.标题标签"></a>2.标题标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h1&gt;这是一级标签&lt;/h1&gt;</span><br><span class="line">    &lt;h2&gt;这是二级标签&lt;/h2&gt;</span><br><span class="line">    &lt;h3&gt;这是三级标签&lt;/h3&gt;</span><br><span class="line">    &lt;h4&gt;这是四级标签&lt;/h4&gt;</span><br><span class="line">    &lt;h5&gt;这是五级标签&lt;/h5&gt;</span><br><span class="line">    &lt;h6&gt;这是六级标签&lt;/h6&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="3-段落标签"><a href="#3-段落标签" class="headerlink" title="3.段落标签"></a>3.段落标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;p&gt;段落一&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;段落二&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;段落三&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="4-换行标签"><a href="#4-换行标签" class="headerlink" title="4.换行标签"></a>4.换行标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    第一行&lt;br&gt;</span><br><span class="line">    第二行&lt;br&gt;</span><br><span class="line">    第三行&lt;br&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="5-格式化标签"><a href="#5-格式化标签" class="headerlink" title="5.格式化标签"></a>5.格式化标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;strong&gt;加粗&lt;/strong&gt;</span><br><span class="line">    &lt;b&gt;加粗&lt;/b&gt;</span><br><span class="line"></span><br><span class="line">    &lt;em&gt;倾斜&lt;/em&gt;</span><br><span class="line">    &lt;i&gt;倾斜&lt;/i&gt;</span><br><span class="line"></span><br><span class="line">    &lt;del&gt;删除线&lt;/del&gt;</span><br><span class="line">    &lt;s&gt;删除线&lt;/s&gt;</span><br><span class="line"></span><br><span class="line">    &lt;ins&gt;下划线&lt;/ins&gt;</span><br><span class="line">    &lt;u&gt;下划线&lt;/u&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="6-图片标签"><a href="#6-图片标签" class="headerlink" title="6.图片标签"></a>6.图片标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;img src=&quot;相对路径，绝对路径或网络路径&quot; alt=&quot;图片加载错误时的描述信息&quot; width=&quot;宽&quot; height=&quot;高&quot; &gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>注意width 单位是px 像素。</p>
+<h4 id="7-超链接标签"><a href="#7-超链接标签" class="headerlink" title="7.超链接标签"></a>7.超链接标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;a href=&quot;网址&quot;&gt;点击此处跳转&lt;/a&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>超链接标签用<a> </a>来表示，其中的href属性表示点击后会跳转到哪个页面，target表示打开方式，默认是_self，在本标签页打开，如果设置为_blank，则用新的标签页打开。</p>
+<h4 id="8-表格标签"><a href="#8-表格标签" class="headerlink" title="8.表格标签"></a>8.表格标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;table border=&quot;1&quot;&gt;</span><br><span class="line">    &lt;!-- 表头 --&gt;</span><br><span class="line">    &lt;th&gt;列标题1&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;列标题2&lt;/th&gt;    </span><br><span class="line">    &lt;th&gt;列标题3&lt;/th&gt;    </span><br><span class="line">    &lt;th&gt;列标题4&lt;/th&gt;    </span><br><span class="line"> &lt;tr&gt; </span><br><span class="line">    &lt;!-- 每一行都是一个tr标签 --&gt;</span><br><span class="line">     &lt;!-- 每一列都是一个td标签 --&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;欸嘿嘿&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line"></span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;好玩&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;666&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    </span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="9-列表标签"><a href="#9-列表标签" class="headerlink" title="9.列表标签"></a>9.列表标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!-- 无序列表 --&gt;</span><br><span class="line">  &lt;ul&gt;</span><br><span class="line"></span><br><span class="line">       &lt;li&gt;lalala&lt;/li&gt;</span><br><span class="line">       &lt;li&gt;lalala&lt;/li&gt;</span><br><span class="line">       &lt;li&gt;lalala&lt;/li&gt;</span><br><span class="line">       &lt;li&gt;lalala&lt;/li&gt;</span><br><span class="line"></span><br><span class="line">  &lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">  &lt;!-- 有序列表 --&gt;</span><br><span class="line">  &lt;ol&gt;</span><br><span class="line"></span><br><span class="line">   &lt;li&gt;111111&lt;/li&gt;</span><br><span class="line">   &lt;li&gt;111111&lt;/li&gt;</span><br><span class="line">   </span><br><span class="line">  &lt;/ol&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="10-表单标签"><a href="#10-表单标签" class="headerlink" title="10.表单标签"></a>10.表单标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;form action=&quot;&quot;&gt;</span><br><span class="line">        &lt;label for=&quot;&quot;&gt;用户名：&lt;/label&gt;</span><br><span class="line">        &lt;input type=&quot;text&quot; id=&quot;username&quot;  placeholder=&quot;有点意思&quot;&gt;</span><br><span class="line">        &lt;br&gt;&lt;br&gt;</span><br><span class="line">        &lt;label for=&quot;&quot;&gt;密码：&lt;/label&gt;</span><br><span class="line">        &lt;input type=&quot;password&quot; id=&quot;psw&quot; placeholder=&quot;有点意思&quot;&gt;</span><br><span class="line">        &lt;br&gt;&lt;br&gt;</span><br><span class="line">        &lt;label&gt;性别&lt;/label&gt;</span><br><span class="line">        &lt;input type=&quot;radio&quot; name=&quot;gender&quot;&gt;男    </span><br><span class="line">        &lt;input type=&quot;radio&quot; name=&quot;gender&quot;&gt;女</span><br><span class="line">         &lt;br&gt;</span><br><span class="line">        &lt;label for=&quot;&quot;&gt;爱好&lt;/label&gt;</span><br><span class="line">                          &lt;!-- 通过相同的name使得单选框互斥，构成单选 --&gt;</span><br><span class="line">        &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot;&gt;唱跳</span><br><span class="line">        &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot;&gt;rap</span><br><span class="line">        &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot;&gt;篮球</span><br><span class="line">        &lt;br&gt;&lt;br&gt;</span><br><span class="line">                         &lt;!-- value生成固定字样 --&gt;</span><br><span class="line">        &lt;input type=&quot;submit&quot; value=&quot;上传&quot;&gt;</span><br><span class="line">    &lt;/form&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
       </tags>
   </entry>
   <entry>
@@ -145,34 +208,6 @@
       </categories>
       <tags>
         <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2025/03/28/hello-world/</url>
-    <content><![CDATA[<p>这篇博客简述一下整个博客框架的搭建流程，该文本不包括站点信息的配置。流程如下：</p>
-<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>首先我们应该安装Node.js,下载地址如下：<a href="https://nodejs.org/zh-cn/download/">nodejs</a>；<br>安装完成之后我们要确保环境变量配置好，可以正常使用npm命令。</p>
-<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>Hexo是一个博客框架，其官方还提供了一个命令行工具，可以快速创建项目、页面、编译、部署Hexo博客，接下来我们应该安装Hexo的命令行工具。</p>
-<h3 id="安装命令如下"><a href="#安装命令如下" class="headerlink" title="安装命令如下"></a>安装命令如下</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p>安装完成后，确保环境变量配置好，可以正常使用hexo命令。</p>
-<h2 id="用hexo命令行创建项目"><a href="#用hexo命令行创建项目" class="headerlink" title="用hexo命令行创建项目"></a>用hexo命令行创建项目</h2><h3 id="创建新项目"><a href="#创建新项目" class="headerlink" title="创建新项目"></a>创建新项目</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>接下来我们进入新生成的文件夹里，调用hexo的generate命令，这样就将Hexo编译生成HTML代码，命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>然后我们可以通过hexo提供的serve命令使博客在本地运行起来，命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo serve</span><br></pre></td></tr></table></figure>
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>那么怎么把这个页面部署到Github Pages上面呢？hexo已经提供了一个命令可以帮助我们将博客一键部署，但是在运用这个命令之前，我们应该安装hexo-deployer-git插件,执行的安装命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save </span><br></pre></td></tr></table></figure>
-<p>安装成功后，执行部署命令；</p>
-<h3 id="执行部署命令"><a href="#执行部署命令" class="headerlink" title="执行部署命令"></a>执行部署命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>这样一来我们的博客就成功部署到 Github Pages 上面了，此时我们已经可以通过访问 Github Repository 的同名链接，就能看到和本地相同的博客内容了。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总而言之该博客的构建并不困难，过程并非复杂繁琐，但对于一个我这样的新手而言仍然需要有足够的耐心去解决一个个奇奇怪怪的小问题，坚持下去就好！</p>
-]]></content>
-      <categories>
-        <category>博客搭建</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
       </tags>
   </entry>
 </search>
