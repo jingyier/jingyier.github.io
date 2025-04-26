@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-04-26T02:55:58.311Z</updated>
+  <updated>2025-04-26T08:59:25.975Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>安装Vue.js</title>
+    <link href="http://example.com/2025/04/26/%E5%AE%89%E8%A3%85Vue-js/"/>
+    <id>http://example.com/2025/04/26/%E5%AE%89%E8%A3%85Vue-js/</id>
+    <published>2025-04-26T08:42:38.000Z</published>
+    <updated>2025-04-26T08:59:25.975Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="一、安装过程"><a href="#一、安装过程" class="headerlink" title="一、安装过程"></a>一、安装过程</h2><h3 id="1-安装node-js"><a href="#1-安装node-js" class="headerlink" title="1.安装node.js"></a>1.安装node.js</h3><p>Vue CLI 4.x 需要Node.js 8.9 或更高版本（推荐v10+）。可以使用n、nvm或nvm-windows 在同一台机器上管理多个版本的Node。 如果你不确定系统中正在运行的 Node.js 版本是什么，请在终端窗口中运行 如下命令<br>：</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure><h3 id="2-安装npm"><a href="#2-安装npm" class="headerlink" title="2.安装npm"></a>2.安装npm</h3><p>可以通过这个命令检查是否安装了npm客户端</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure><h3 id="3-安装Vue-CLI新软件包"><a href="#3-安装Vue-CLI新软件包" class="headerlink" title="3.安装Vue CLI新软件包"></a>3.安装Vue CLI新软件包</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g @vue/cli</span><br></pre></td></tr></table></figure><p>你可以通过以下命令检查是否安装成功</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue --version</span><br></pre></td></tr></table></figure><p>如果你和我一样不小心安装了之前版本，可以用这个命令卸载</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall vue-cli -g</span><br></pre></td></tr></table></figure><h2 id="二、问题总结"><a href="#二、问题总结" class="headerlink" title="二、问题总结"></a>二、问题总结</h2><p>其实在安装了新版本之后，我的vue依旧是安装失败的。此时有可能是npm全局路径没有添加到系统变量，所以我先通过以下命令找到npm全局安装路径<br>。</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm config get prefix</span><br></pre></td></tr></table></figure><p>之后我把该路径添加到了系统的PATH变量上，问题就解决了。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;一、安装过程&quot;&gt;&lt;a href=&quot;#一、安装过程&quot; class=&quot;headerlink&quot; title=&quot;一、安装过程&quot;&gt;&lt;/a&gt;一、安装过程&lt;/h2&gt;&lt;h3 id=&quot;1-安装node-js&quot;&gt;&lt;a href=&quot;#1-安装node-js&quot; class=&quot;header</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>HTML简单总结</title>
