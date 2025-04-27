@@ -197,6 +197,128 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/04/27/4-27%E8%B5%B7%E5%BE%80%E5%90%8E%E4%B8%80%E5%91%A8%E5%B0%8F%E7%BB%93/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="jingyier">
+      <meta itemprop="description" content="喜欢打篮球和乒乓球，也很喜欢睡觉">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jingyier">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2025/04/27/4-27%E8%B5%B7%E5%BE%80%E5%90%8E%E4%B8%80%E5%91%A8%E5%B0%8F%E7%BB%93/" class="post-title-link" itemprop="url">4.27起往后一周小结</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2025-04-27 20:45:24 / 修改时间：22:29:40" itemprop="dateCreated datePublished" datetime="2025-04-27T20:45:24+08:00">2025-04-27</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0/" itemprop="url" rel="index"><span itemprop="name">学习</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h3 id="4-27"><a href="#4-27" class="headerlink" title="4.27"></a>4.27</h3><p>今天继续学习了Java的继承、多态等等，同时学到了几个好用的快捷键，下面总结一下（ps:继承其实就是共性抽取）：</p>
+<h4 id="1-快捷键"><a href="#1-快捷键" class="headerlink" title="1.快捷键"></a>1.快捷键</h4><p>在idea的开发环境中，可以用这个快捷方式弹出一个交互界面，可以帮助我们直接构造方法、创建setter、getter等等，感觉挺好用的。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alt + insert</span><br></pre></td></tr></table></figure>
+
+<p>如果要对构造方法合并表示，可以直接全选：（好吧确实有点傻，但我确实不知道）</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctrl + a</span><br></pre></td></tr></table></figure>
+<p>批量修改：对相同的变量名统一修改</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shift + f6</span><br></pre></td></tr></table></figure>
+<p>搜索想要找的类，方法等等：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctrl + n</span><br></pre></td></tr></table></figure>
+
+<p>idea环境中自动纠错：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alt + enter</span><br></pre></td></tr></table></figure>
+<p>自动显示参数</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctrl + p</span><br></pre></td></tr></table></figure>
+<h4 id="2-java知识点"><a href="#2-java知识点" class="headerlink" title="2.java知识点"></a>2.java知识点</h4><h5 id="final-修饰符"><a href="#final-修饰符" class="headerlink" title="&lt;1&gt;final 修饰符"></a>&lt;1&gt;final 修饰符</h5><hr>
+<ul>
+<li><p>修饰方法：方法不能重写，是最终方法</p>
+</li>
+<li><p>修饰类： 类不能被继承，是最终类</p>
+</li>
+<li><p>修饰变量：叫做常量，只能被赋值一次</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>修饰基本数据类型：记录的值不发生改变</p>
+</li>
+<li><p>修饰引用数据类型：记录的地址值不发生改变，内部属性值可以改变</p>
+</li>
+</ul>
+<h5 id="权限修饰符的使用规则"><a href="#权限修饰符的使用规则" class="headerlink" title="&lt;2&gt;权限修饰符的使用规则"></a>&lt;2&gt;权限修饰符的使用规则</h5><ul>
+<li>成员变量私有</li>
+<li>方法公开</li>
+<li>特例：如果方法中的代码是抽取到其他代码中的共性代码，这个方法一般也私有。</li>
+</ul>
+<h5 id="抽象"><a href="#抽象" class="headerlink" title="&lt;3&gt;抽象"></a>&lt;3&gt;抽象</h5><p>作用：抽取共性时，无法确定方法体，就把方法定义为抽象的。</p>
+<ul>
+<li>抽象方法：将共性的方法抽取到父类之后，由于每一个子类执行的内容不一样，所以在父类中不能确定具体的方法体，该方法就可以定义为抽象方法。</li>
+</ul>
+<p><em>抽象方法没有方法体</em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public abstract 返回值类型 方法名（参数列表）;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>抽象类：如果一个类中存在抽象方法，那么这个类必须声明为抽象类</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">public abstract class 类名&#123;&#125;;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>注意事项：</p>
+<ul>
+<li>抽象类不能实例化，即不能创建对象；</li>
+<li>抽象类中不一定有抽象方法，有抽象方法的类一定是抽象类；</li>
+<li>可以有构造方法（作用：创建子类方法时给属性进行赋值）；</li>
+<li>抽象类的子类要么重写抽象类中的所有抽象方法，要么是抽象类，多用第一种。</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2025/04/26/%E5%AE%89%E8%A3%85Vue-js/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -792,7 +914,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">5</span>
+          <span class="site-state-item-count">6</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -805,7 +927,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

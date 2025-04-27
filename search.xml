@@ -1,6 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>4.27起往后一周小结</title>
+    <url>/2025/04/27/4-27%E8%B5%B7%E5%BE%80%E5%90%8E%E4%B8%80%E5%91%A8%E5%B0%8F%E7%BB%93/</url>
+    <content><![CDATA[<h3 id="4-27"><a href="#4-27" class="headerlink" title="4.27"></a>4.27</h3><p>今天继续学习了Java的继承、多态等等，同时学到了几个好用的快捷键，下面总结一下（ps:继承其实就是共性抽取）：</p>
+<h4 id="1-快捷键"><a href="#1-快捷键" class="headerlink" title="1.快捷键"></a>1.快捷键</h4><p>在idea的开发环境中，可以用这个快捷方式弹出一个交互界面，可以帮助我们直接构造方法、创建setter、getter等等，感觉挺好用的。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alt + insert</span><br></pre></td></tr></table></figure>
+
+<p>如果要对构造方法合并表示，可以直接全选：（好吧确实有点傻，但我确实不知道）</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ctrl + a</span><br></pre></td></tr></table></figure>
+<p>批量修改：对相同的变量名统一修改</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">shift + f6</span><br></pre></td></tr></table></figure>
+<p>搜索想要找的类，方法等等：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ctrl + n</span><br></pre></td></tr></table></figure>
+
+<p>idea环境中自动纠错：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">alt + enter</span><br></pre></td></tr></table></figure>
+<p>自动显示参数</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ctrl + p</span><br></pre></td></tr></table></figure>
+<h4 id="2-java知识点"><a href="#2-java知识点" class="headerlink" title="2.java知识点"></a>2.java知识点</h4><h5 id="final-修饰符"><a href="#final-修饰符" class="headerlink" title="&lt;1&gt;final 修饰符"></a>&lt;1&gt;final 修饰符</h5><hr>
+<ul>
+<li><p>修饰方法：方法不能重写，是最终方法</p>
+</li>
+<li><p>修饰类： 类不能被继承，是最终类</p>
+</li>
+<li><p>修饰变量：叫做常量，只能被赋值一次</p>
+</li>
+</ul>
+<hr>
+<ul>
+<li><p>修饰基本数据类型：记录的值不发生改变</p>
+</li>
+<li><p>修饰引用数据类型：记录的地址值不发生改变，内部属性值可以改变</p>
+</li>
+</ul>
+<h5 id="权限修饰符的使用规则"><a href="#权限修饰符的使用规则" class="headerlink" title="&lt;2&gt;权限修饰符的使用规则"></a>&lt;2&gt;权限修饰符的使用规则</h5><ul>
+<li>成员变量私有</li>
+<li>方法公开</li>
+<li>特例：如果方法中的代码是抽取到其他代码中的共性代码，这个方法一般也私有。</li>
+</ul>
+<h5 id="抽象"><a href="#抽象" class="headerlink" title="&lt;3&gt;抽象"></a>&lt;3&gt;抽象</h5><p>作用：抽取共性时，无法确定方法体，就把方法定义为抽象的。</p>
+<ul>
+<li>抽象方法：将共性的方法抽取到父类之后，由于每一个子类执行的内容不一样，所以在父类中不能确定具体的方法体，该方法就可以定义为抽象方法。</li>
+</ul>
+<p><em>抽象方法没有方法体</em></p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public abstract 返回值类型 方法名（参数列表）;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>抽象类：如果一个类中存在抽象方法，那么这个类必须声明为抽象类</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public abstract class 类名&#123;&#125;;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>注意事项：</p>
+<ul>
+<li>抽象类不能实例化，即不能创建对象；</li>
+<li>抽象类中不一定有抽象方法，有抽象方法的类一定是抽象类；</li>
+<li>可以有构造方法（作用：创建子类方法时给属性进行赋值）；</li>
+<li>抽象类的子类要么重写抽象类中的所有抽象方法，要么是抽象类，多用第一种。</li>
+</ul>
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>周小结</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hello-world-1</title>
+    <url>/2025/04/02/hello-world-1/</url>
+    <content><![CDATA[<h2 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h2><p>抬头一看，整个黑幕布似的天空星星点点的闪烁着，刚开始只能看见一个又一个北斗七星一样的连串的星链。<br>再次出去，从四合院中透过去的方形的天空上，是无数颗斑斓的，跳动的星星，有微弱的细小的闪动着的，也有硕大明亮的，有金黄麦田一样热烈的黄色星星，也有白练雪莲般一样纯洁的，星星的排布是大自然最得意的一笔，细密而又大小不一，间隙而又或明或暗。</p>
+<p><img src="/hello-world-1/222.jpg" alt="222"></p>
+<p>星星大多是连在一起组合成各种各样的形状的，像是轻跃而起的独角兽，又像是弯弯的白船，也有很多零散着的，就那么紧紧靠在一起，那是我从来没有见过的样子。我转着圈，星星就像流动的水一样旋转起来，托着俏皮的尾。我贪婪的疯狂的看着他们，想要尽收眼底，此刻我好像坐在阿尔卑斯雪山上仰望星空，我从来没有离星星这么近过，也从来没有这么真切的感受过他们，我看向那片没有边际却又框在方里的天，黑色的天空已经被星星铺满了，但没有专业设备，只能感叹于她的绚丽闪耀和再多看一眼，希望能在心里留得久些</p>
+<p><img src="/hello-world-1/333.jpg" alt="333"></p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML简单总结</title>
     <url>/2025/04/26/HTML%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<h2 id="HTML基础知识"><a href="#HTML基础知识" class="headerlink" title="HTML基础知识"></a>HTML基础知识</h2><ul>
@@ -36,34 +117,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/03/28/hello-world/</url>
-    <content><![CDATA[<p>这篇博客简述一下整个博客框架的搭建流程，该文本不包括站点信息的配置。流程如下：</p>
-<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>首先我们应该安装Node.js,下载地址如下：<a href="https://nodejs.org/zh-cn/download/">nodejs</a>；<br>安装完成之后我们要确保环境变量配置好，可以正常使用npm命令。</p>
-<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>Hexo是一个博客框架，其官方还提供了一个命令行工具，可以快速创建项目、页面、编译、部署Hexo博客，接下来我们应该安装Hexo的命令行工具。</p>
-<h3 id="安装命令如下"><a href="#安装命令如下" class="headerlink" title="安装命令如下"></a>安装命令如下</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p>安装完成后，确保环境变量配置好，可以正常使用hexo命令。</p>
-<h2 id="用hexo命令行创建项目"><a href="#用hexo命令行创建项目" class="headerlink" title="用hexo命令行创建项目"></a>用hexo命令行创建项目</h2><h3 id="创建新项目"><a href="#创建新项目" class="headerlink" title="创建新项目"></a>创建新项目</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>接下来我们进入新生成的文件夹里，调用hexo的generate命令，这样就将Hexo编译生成HTML代码，命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>然后我们可以通过hexo提供的serve命令使博客在本地运行起来，命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo serve</span><br></pre></td></tr></table></figure>
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>那么怎么把这个页面部署到Github Pages上面呢？hexo已经提供了一个命令可以帮助我们将博客一键部署，但是在运用这个命令之前，我们应该安装hexo-deployer-git插件,执行的安装命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save </span><br></pre></td></tr></table></figure>
-<p>安装成功后，执行部署命令；</p>
-<h3 id="执行部署命令"><a href="#执行部署命令" class="headerlink" title="执行部署命令"></a>执行部署命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>这样一来我们的博客就成功部署到 Github Pages 上面了，此时我们已经可以通过访问 Github Repository 的同名链接，就能看到和本地相同的博客内容了。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总而言之该博客的构建并不困难，过程并非复杂繁琐，但对于一个我这样的新手而言仍然需要有足够的耐心去解决一个个奇奇怪怪的小问题，坚持下去就好！</p>
-]]></content>
-      <categories>
-        <category>博客搭建</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>安装Vue.js</title>
     <url>/2025/04/26/%E5%AE%89%E8%A3%85Vue-js/</url>
     <content><![CDATA[<h2 id="一、安装过程"><a href="#一、安装过程" class="headerlink" title="一、安装过程"></a>一、安装过程</h2><h3 id="1-安装node-js"><a href="#1-安装node-js" class="headerlink" title="1.安装node.js"></a>1.安装node.js</h3><p>Vue CLI 4.x 需要Node.js 8.9 或更高版本（推荐v10+）。可以使用n、nvm或nvm-windows 在同一台机器上管理多个版本的Node。 如果你不确定系统中正在运行的 Node.js 版本是什么，请在终端窗口中运行 如下命令<br>：</p>
@@ -82,21 +135,6 @@
       <categories>
         <category>学习</category>
       </categories>
-  </entry>
-  <entry>
-    <title>hello-world-1</title>
-    <url>/2025/04/02/hello-world-1/</url>
-    <content><![CDATA[<h2 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h2><p>抬头一看，整个黑幕布似的天空星星点点的闪烁着，刚开始只能看见一个又一个北斗七星一样的连串的星链。<br>再次出去，从四合院中透过去的方形的天空上，是无数颗斑斓的，跳动的星星，有微弱的细小的闪动着的，也有硕大明亮的，有金黄麦田一样热烈的黄色星星，也有白练雪莲般一样纯洁的，星星的排布是大自然最得意的一笔，细密而又大小不一，间隙而又或明或暗。</p>
-<p><img src="/hello-world-1/222.jpg" alt="222"></p>
-<p>星星大多是连在一起组合成各种各样的形状的，像是轻跃而起的独角兽，又像是弯弯的白船，也有很多零散着的，就那么紧紧靠在一起，那是我从来没有见过的样子。我转着圈，星星就像流动的水一样旋转起来，托着俏皮的尾。我贪婪的疯狂的看着他们，想要尽收眼底，此刻我好像坐在阿尔卑斯雪山上仰望星空，我从来没有离星星这么近过，也从来没有这么真切的感受过他们，我看向那片没有边际却又框在方里的天，黑色的天空已经被星星铺满了，但没有专业设备，只能感叹于她的绚丽闪耀和再多看一眼，希望能在心里留得久些</p>
-<p><img src="/hello-world-1/333.jpg" alt="333"></p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
   </entry>
   <entry>
     <title>&#39;jingyier-first-blog&#39;</title>
@@ -228,6 +266,34 @@
       </categories>
       <tags>
         <tag>生活</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2025/03/28/hello-world/</url>
+    <content><![CDATA[<p>这篇博客简述一下整个博客框架的搭建流程，该文本不包括站点信息的配置。流程如下：</p>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>首先我们应该安装Node.js,下载地址如下：<a href="https://nodejs.org/zh-cn/download/">nodejs</a>；<br>安装完成之后我们要确保环境变量配置好，可以正常使用npm命令。</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>Hexo是一个博客框架，其官方还提供了一个命令行工具，可以快速创建项目、页面、编译、部署Hexo博客，接下来我们应该安装Hexo的命令行工具。</p>
+<h3 id="安装命令如下"><a href="#安装命令如下" class="headerlink" title="安装命令如下"></a>安装命令如下</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>安装完成后，确保环境变量配置好，可以正常使用hexo命令。</p>
+<h2 id="用hexo命令行创建项目"><a href="#用hexo命令行创建项目" class="headerlink" title="用hexo命令行创建项目"></a>用hexo命令行创建项目</h2><h3 id="创建新项目"><a href="#创建新项目" class="headerlink" title="创建新项目"></a>创建新项目</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>接下来我们进入新生成的文件夹里，调用hexo的generate命令，这样就将Hexo编译生成HTML代码，命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>然后我们可以通过hexo提供的serve命令使博客在本地运行起来，命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo serve</span><br></pre></td></tr></table></figure>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>那么怎么把这个页面部署到Github Pages上面呢？hexo已经提供了一个命令可以帮助我们将博客一键部署，但是在运用这个命令之前，我们应该安装hexo-deployer-git插件,执行的安装命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save </span><br></pre></td></tr></table></figure>
+<p>安装成功后，执行部署命令；</p>
+<h3 id="执行部署命令"><a href="#执行部署命令" class="headerlink" title="执行部署命令"></a>执行部署命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>这样一来我们的博客就成功部署到 Github Pages 上面了，此时我们已经可以通过访问 Github Repository 的同名链接，就能看到和本地相同的博客内容了。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总而言之该博客的构建并不困难，过程并非复杂繁琐，但对于一个我这样的新手而言仍然需要有足够的耐心去解决一个个奇奇怪怪的小问题，坚持下去就好！</p>
+]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
       </tags>
   </entry>
 </search>
