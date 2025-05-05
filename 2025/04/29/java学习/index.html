@@ -28,7 +28,7 @@
 <meta property="og:description" content="异常处理一、异常语句块处理1.自己异常处理try cathc语句 2.单个异常处理1234567try&#123;     &#x2F;&#x2F;防止肯出现异常的代码&#125;catch(异常类型 异常名称)&#123;     &#x2F;&#x2F;放置处理异常的代码     &#125;finally&#123;     &#x2F;&#x2F;释放资源     &#125; 123456789101112131415ublic class Ex">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2025-04-29T11:22:38.000Z">
-<meta property="article:modified_time" content="2025-04-29T12:55:12.820Z">
+<meta property="article:modified_time" content="2025-04-30T00:08:09.051Z">
 <meta property="article:author" content="jingyier">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
@@ -222,10 +222,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2025-04-29 19:22:38 / 修改时间：20:55:12" itemprop="dateCreated datePublished" datetime="2025-04-29T19:22:38+08:00">2025-04-29</time>
+              <time title="创建时间：2025-04-29 19:22:38" itemprop="dateCreated datePublished" datetime="2025-04-29T19:22:38+08:00">2025-04-29</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2025-04-30 08:08:09" itemprop="dateModified" datetime="2025-04-30T08:08:09+08:00">2025-04-30</time>
+              </span>
 
           
 
@@ -259,7 +265,14 @@
 <ol start="2">
 <li>throws作用：在定义一个方法的时候可以使用throws关键字声明，使用throws关键字声明的方法表示此方法不处理异常，而交给方法的调用者进行处理</li>
 </ol>
-<h3 id="三、throw关键字"><a href="#三、throw关键字" class="headerlink" title="三、throw关键字"></a>三、throw关键字</h3>
+<h3 id="三、throw关键字"><a href="#三、throw关键字" class="headerlink" title="三、throw关键字"></a>三、throw关键字</h3><ul>
+<li>throw用在方法名后面，跟的是异常类名，throw是用在方法体中，跟的是异常对象。</li>
+<li>throws可以跟多个异常类名，用逗号隔开，throw只能抛出一个异常对象</li>
+<li>throws表示抛出异常，由该方法的调用者处理，throw表示抛出异常，由方法体内的语句处理</li>
+<li>throws表示出现异常的可能性，并不一定真的发生这些异常，throw则是抛出了具体的异常，真的产生了一个Expection对象。</li>
+</ul>
+<h3 id="四、finally关键字"><a href="#四、finally关键字" class="headerlink" title="四、finally关键字"></a>四、finally关键字</h3><p>finally修饰的代码一定会执行，除非在finally之前程序异常退出或者调用了系统的退出方法。</p>
+
     </div>
 
     
@@ -280,7 +293,10 @@
     <a href="/2025/04/27/4-27%E8%B5%B7%E5%BE%80%E5%90%8E%E4%B8%80%E5%91%A8%E5%B0%8F%E7%BB%93/" rel="prev" title="4.27起往后一周小结">
       <i class="fa fa-chevron-left"></i> 4.27起往后一周小结
     </a></div>
-      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/2025/05/01/Python-Advanced-exercises/" rel="next" title="Python_Advanced_exercises">
+      Python_Advanced_exercises <i class="fa fa-chevron-right"></i>
+    </a></div>
     </div>
       </footer>
     
@@ -339,7 +355,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="nav-number">1.</span> <span class="nav-text">异常处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%BC%82%E5%B8%B8%E8%AF%AD%E5%8F%A5%E5%9D%97%E5%A4%84%E7%90%86"><span class="nav-number">1.1.</span> <span class="nav-text">一、异常语句块处理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E8%87%AA%E5%B7%B1%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.自己异常处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E5%8D%95%E4%B8%AA%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="nav-number">1.1.2.</span> <span class="nav-text">2.单个异常处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%A4%9A%E4%B8%AA%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="nav-number">1.1.3.</span> <span class="nav-text">3.多个异常处理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%B0%86%E5%BC%82%E5%B8%B8%E6%8A%9B%E5%87%BA"><span class="nav-number">1.2.</span> <span class="nav-text">二、将异常抛出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81throw%E5%85%B3%E9%94%AE%E5%AD%97"><span class="nav-number">1.3.</span> <span class="nav-text">三、throw关键字</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="nav-number">1.</span> <span class="nav-text">异常处理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%BC%82%E5%B8%B8%E8%AF%AD%E5%8F%A5%E5%9D%97%E5%A4%84%E7%90%86"><span class="nav-number">1.1.</span> <span class="nav-text">一、异常语句块处理</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-%E8%87%AA%E5%B7%B1%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.自己异常处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-%E5%8D%95%E4%B8%AA%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="nav-number">1.1.2.</span> <span class="nav-text">2.单个异常处理</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-%E5%A4%9A%E4%B8%AA%E5%BC%82%E5%B8%B8%E5%A4%84%E7%90%86"><span class="nav-number">1.1.3.</span> <span class="nav-text">3.多个异常处理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%B0%86%E5%BC%82%E5%B8%B8%E6%8A%9B%E5%87%BA"><span class="nav-number">1.2.</span> <span class="nav-text">二、将异常抛出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%89%E3%80%81throw%E5%85%B3%E9%94%AE%E5%AD%97"><span class="nav-number">1.3.</span> <span class="nav-text">三、throw关键字</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%9B%E3%80%81finally%E5%85%B3%E9%94%AE%E5%AD%97"><span class="nav-number">1.4.</span> <span class="nav-text">四、finally关键字</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -355,7 +371,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>

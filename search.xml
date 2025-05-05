@@ -1,49 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>hello-world-1</title>
-    <url>/2025/04/02/hello-world-1/</url>
-    <content><![CDATA[<h2 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h2><p>抬头一看，整个黑幕布似的天空星星点点的闪烁着，刚开始只能看见一个又一个北斗七星一样的连串的星链。<br>再次出去，从四合院中透过去的方形的天空上，是无数颗斑斓的，跳动的星星，有微弱的细小的闪动着的，也有硕大明亮的，有金黄麦田一样热烈的黄色星星，也有白练雪莲般一样纯洁的，星星的排布是大自然最得意的一笔，细密而又大小不一，间隙而又或明或暗。</p>
-<p><img src="/hello-world-1/222.jpg" alt="222"></p>
-<p>星星大多是连在一起组合成各种各样的形状的，像是轻跃而起的独角兽，又像是弯弯的白船，也有很多零散着的，就那么紧紧靠在一起，那是我从来没有见过的样子。我转着圈，星星就像流动的水一样旋转起来，托着俏皮的尾。我贪婪的疯狂的看着他们，想要尽收眼底，此刻我好像坐在阿尔卑斯雪山上仰望星空，我从来没有离星星这么近过，也从来没有这么真切的感受过他们，我看向那片没有边际却又框在方里的天，黑色的天空已经被星星铺满了，但没有专业设备，只能感叹于她的绚丽闪耀和再多看一眼，希望能在心里留得久些</p>
-<p><img src="/hello-world-1/333.jpg" alt="333"></p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2025/03/28/hello-world/</url>
-    <content><![CDATA[<p>这篇博客简述一下整个博客框架的搭建流程，该文本不包括站点信息的配置。流程如下：</p>
-<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>首先我们应该安装Node.js,下载地址如下：<a href="https://nodejs.org/zh-cn/download/">nodejs</a>；<br>安装完成之后我们要确保环境变量配置好，可以正常使用npm命令。</p>
-<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>Hexo是一个博客框架，其官方还提供了一个命令行工具，可以快速创建项目、页面、编译、部署Hexo博客，接下来我们应该安装Hexo的命令行工具。</p>
-<h3 id="安装命令如下"><a href="#安装命令如下" class="headerlink" title="安装命令如下"></a>安装命令如下</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p>安装完成后，确保环境变量配置好，可以正常使用hexo命令。</p>
-<h2 id="用hexo命令行创建项目"><a href="#用hexo命令行创建项目" class="headerlink" title="用hexo命令行创建项目"></a>用hexo命令行创建项目</h2><h3 id="创建新项目"><a href="#创建新项目" class="headerlink" title="创建新项目"></a>创建新项目</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>接下来我们进入新生成的文件夹里，调用hexo的generate命令，这样就将Hexo编译生成HTML代码，命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>然后我们可以通过hexo提供的serve命令使博客在本地运行起来，命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo serve</span><br></pre></td></tr></table></figure>
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>那么怎么把这个页面部署到Github Pages上面呢？hexo已经提供了一个命令可以帮助我们将博客一键部署，但是在运用这个命令之前，我们应该安装hexo-deployer-git插件,执行的安装命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save </span><br></pre></td></tr></table></figure>
-<p>安装成功后，执行部署命令；</p>
-<h3 id="执行部署命令"><a href="#执行部署命令" class="headerlink" title="执行部署命令"></a>执行部署命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>这样一来我们的博客就成功部署到 Github Pages 上面了，此时我们已经可以通过访问 Github Repository 的同名链接，就能看到和本地相同的博客内容了。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总而言之该博客的构建并不困难，过程并非复杂繁琐，但对于一个我这样的新手而言仍然需要有足够的耐心去解决一个个奇奇怪怪的小问题，坚持下去就好！</p>
-]]></content>
-      <categories>
-        <category>博客搭建</category>
-      </categories>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>4.27起往后一周小结</title>
     <url>/2025/04/27/4-27%E8%B5%B7%E5%BE%80%E5%90%8E%E4%B8%80%E5%91%A8%E5%B0%8F%E7%BB%93/</url>
     <content><![CDATA[<h3 id="4-27"><a href="#4-27" class="headerlink" title="4.27"></a>4.27</h3><p>今天继续学习了Java的继承、多态等等，同时学到了几个好用的快捷键，下面总结一下（ps:继承其实就是共性抽取）：</p>
@@ -157,6 +114,74 @@
 <li>列表，元组，字符串相互转换关键字list(),tuple(),str()</li>
 <li>字典</li>
 </ol>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="关键字函数"><a href="#关键字函数" class="headerlink" title="关键字函数"></a>关键字函数</h4><h4 id="收集函数"><a href="#收集函数" class="headerlink" title="收集函数"></a>收集函数</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def myfunc(a,*b,**c):</span><br><span class="line">    print(a,b,c)</span><br><span class="line">myfunc(1,34,5,6,74,3,5,x=1,y=4)</span><br></pre></td></tr></table></figure>
+<p>一个星号表示数据打包到元组，两个星号表示数据打包到字典</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 (34, 5, 6, 74, 3, 5) &#123;&#x27;x&#x27;: 1, &#x27;y&#x27;: 4&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li>星号在形参上调用是参数的打包，实参上调用是参数的解包</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">args=(1,2,3,4)</span><br><span class="line">def myfunc(a,b,c,d):</span><br><span class="line">    print(a,b,c,d)</span><br><span class="line">myfunc(*args)</span><br></pre></td></tr></table></figure>
+<p>这里args前不用星号解包的话会直接报错</p>
+<p>运行效果：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 2 3 4</span><br></pre></td></tr></table></figure>
+<ul>
+<li>两个星号可以把字典解包成关键字参数</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">kwargs= &#123;&#x27;a&#x27;:1,&#x27;b&#x27;:2,&#x27;c&#x27;:3,&#x27;d&#x27;:4&#125;</span><br><span class="line">def myfunc(a,b,c,d):</span><br><span class="line">    print(a,b,c,d)</span><br><span class="line">myfunc(**kwargs)</span><br></pre></td></tr></table></figure>
+
+<p>运行效果</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">1 2 3 4 </span><br></pre></td></tr></table></figure>
+
+<h4 id="嵌套函数"><a href="#嵌套函数" class="headerlink" title="嵌套函数"></a>嵌套函数</h4><h5 id="nonlocal语句可以实现内部函数值修改外部函数值"><a href="#nonlocal语句可以实现内部函数值修改外部函数值" class="headerlink" title="nonlocal语句可以实现内部函数值修改外部函数值"></a>nonlocal语句可以实现内部函数值修改外部函数值</h5><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def funA():</span><br><span class="line">    x=34</span><br><span class="line">    def funB():</span><br><span class="line">        nonlocal x</span><br><span class="line">        x=45</span><br><span class="line">        print(&quot;in funB:x=&quot;,x)</span><br><span class="line">    funB()</span><br><span class="line">    print(&quot;in funA:x=&quot;,x)</span><br><span class="line">funA()</span><br></pre></td></tr></table></figure>
+<p>运行效果</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">in funB:x= 45</span><br><span class="line">in funA:x= 45</span><br></pre></td></tr></table></figure>
+<h5 id="LEGB-规则"><a href="#LEGB-规则" class="headerlink" title="LEGB 规则"></a>LEGB 规则</h5><p>L&gt;E&gt;G&gt;B</p>
+<h4 id="匿名函数"><a href="#匿名函数" class="headerlink" title="匿名函数"></a>匿名函数</h4><ul>
+<li>lambda 函数通常只包含一行代码，这使得它们适用于编写简单的函数。<br>lambda 语法格式：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">lambda arguments: expression</span><br></pre></td></tr></table></figure>
+<ul>
+<li>lambda: Python 的关键字，用于定义 lambda 函数。</li>
+<li>arguments: 参数列表，可以包含零个或多个参数，但必须在冒号(:)前指定。</li>
+<li>expression: 一个表达式，用于计算并返回函数的结果。</li>
+</ul>
+<h4 id="装饰器"><a href="#装饰器" class="headerlink" title="装饰器"></a>装饰器</h4><p>装饰器本质上是一个接收函数作为输入并返回一个新的包装过后的函数的对象。</p>
+<p>（这玩意目前看不懂，先过了）</p>
+<h3 id="数据结构"><a href="#数据结构" class="headerlink" title="数据结构"></a>数据结构</h3><h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><p>在这里不看具体函数，有个用列表当栈使用的例子：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class Stack:</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.stack = []</span><br><span class="line"></span><br><span class="line">    def push(self, item):</span><br><span class="line">        self.stack.append(item)</span><br><span class="line"></span><br><span class="line">    def pop(self):</span><br><span class="line">        if not self.is_empty():</span><br><span class="line">            return self.stack.pop()</span><br><span class="line">        else:</span><br><span class="line">            raise IndexError(&quot;pop from empty stack&quot;)</span><br><span class="line"></span><br><span class="line">    def peek(self):</span><br><span class="line">        if not self.is_empty():</span><br><span class="line">            return self.stack[-1]</span><br><span class="line">        else:</span><br><span class="line">            raise IndexError(&quot;peek from empty stack&quot;)</span><br><span class="line"></span><br><span class="line">    def is_empty(self):</span><br><span class="line">        return len(self.stack) == 0</span><br><span class="line"></span><br><span class="line">    def size(self):</span><br><span class="line">        return len(self.stack)</span><br><span class="line"></span><br><span class="line"># 使用示例</span><br><span class="line">stack = Stack()</span><br><span class="line">stack.push(1)</span><br><span class="line">stack.push(2)</span><br><span class="line">stack.push(3)</span><br><span class="line"></span><br><span class="line">print(&quot;栈顶元素:&quot;, stack.peek())  # 输出: 栈顶元素: 3</span><br><span class="line">print(&quot;栈大小:&quot;, stack.size())    # 输出: 栈大小: 3</span><br><span class="line"></span><br><span class="line">print(&quot;弹出元素:&quot;, stack.pop())  # 输出: 弹出元素: 3</span><br><span class="line">print(&quot;栈是否为空:&quot;, stack.is_empty())  # 输出: 栈是否为空: False</span><br><span class="line">print(&quot;栈大小:&quot;, stack.size())    # 输出: 栈大小: 2</span><br></pre></td></tr></table></figure>
+
+<h5 id="实现队列"><a href="#实现队列" class="headerlink" title="实现队列"></a>实现队列</h5><p>用deque实现</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">from collections import deque</span><br><span class="line"></span><br><span class="line"># 创建一个空队列</span><br><span class="line">queue = deque()</span><br><span class="line"></span><br><span class="line"># 向队尾添加元素</span><br><span class="line">queue.append(&#x27;a&#x27;)</span><br><span class="line">queue.append(&#x27;b&#x27;)</span><br><span class="line">queue.append(&#x27;c&#x27;)</span><br><span class="line"></span><br><span class="line">print(&quot;队列状态:&quot;, queue)  # 输出: 队列状态: deque([&#x27;a&#x27;, &#x27;b&#x27;, &#x27;c&#x27;])</span><br><span class="line"></span><br><span class="line"># 从队首移除元素</span><br><span class="line">first_element = queue.popleft()</span><br><span class="line">print(&quot;移除的元素:&quot;, first_element)  # 输出: 移除的元素: a</span><br><span class="line">print(&quot;队列状态:&quot;, queue)            # 输出: 队列状态: deque([&#x27;b&#x27;, &#x27;c&#x27;])</span><br><span class="line"></span><br><span class="line"># 查看队首元素（不移除）</span><br><span class="line">front_element = queue[0]</span><br><span class="line">print(&quot;队首元素:&quot;, front_element)    # 输出: 队首元素: b</span><br><span class="line"></span><br><span class="line"># 检查队列是否为空</span><br><span class="line">is_empty = len(queue) == 0</span><br><span class="line">print(&quot;队列是否为空:&quot;, is_empty)     # 输出: 队列是否为空: False</span><br><span class="line"></span><br><span class="line"># 获取队列大小</span><br><span class="line">size = len(queue)</span><br><span class="line">print(&quot;队列大小:&quot;, size)            # 输出: 队列大小: 2</span><br></pre></td></tr></table></figure>
+<p>用列表实现</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">class Queue:</span><br><span class="line">    def __init__(self):</span><br><span class="line">        self.queue = []</span><br><span class="line"></span><br><span class="line">    def enqueue(self, item):</span><br><span class="line">        self.queue.append(item)</span><br><span class="line"></span><br><span class="line">    def dequeue(self):</span><br><span class="line">        if not self.is_empty():</span><br><span class="line">            return self.queue.pop(0)</span><br><span class="line">        else:</span><br><span class="line">            raise IndexError(&quot;dequeue from empty queue&quot;)</span><br><span class="line"></span><br><span class="line">    def peek(self):</span><br><span class="line">        if not self.is_empty():</span><br><span class="line">            return self.queue[0]</span><br><span class="line">        else:</span><br><span class="line">            raise IndexError(&quot;peek from empty queue&quot;)</span><br><span class="line"></span><br><span class="line">    def is_empty(self):</span><br><span class="line">        return len(self.queue) == 0</span><br><span class="line"></span><br><span class="line">    def size(self):</span><br><span class="line">        return len(self.queue)</span><br><span class="line"></span><br><span class="line"># 使用示例</span><br><span class="line">queue = Queue()</span><br><span class="line">queue.enqueue(&#x27;a&#x27;)</span><br><span class="line">queue.enqueue(&#x27;b&#x27;)</span><br><span class="line">queue.enqueue(&#x27;c&#x27;)</span><br><span class="line"></span><br><span class="line">print(&quot;队首元素:&quot;, queue.peek())    # 输出: 队首元素: a</span><br><span class="line">print(&quot;队列大小:&quot;, queue.size())    # 输出: 队列大小: 3</span><br><span class="line"></span><br><span class="line">print(&quot;移除的元素:&quot;, queue.dequeue())  # 输出: 移除的元素: a</span><br><span class="line">print(&quot;队列是否为空:&quot;, queue.is_empty())  # 输出: 队列是否为空: False</span><br><span class="line">print(&quot;队列大小:&quot;, queue.size())    # 输出: 队列大小: 2</span><br></pre></td></tr></table></figure>
+
+<h4 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h4><p>下面是集合的各种操作</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&gt;&gt;&gt; basket = &#123;&#x27;apple&#x27;, &#x27;orange&#x27;, &#x27;apple&#x27;, &#x27;pear&#x27;, &#x27;orange&#x27;, &#x27;banana&#x27;&#125;</span><br><span class="line">&gt;&gt;&gt; print(basket)                      # 删除重复的</span><br><span class="line">&#123;&#x27;orange&#x27;, &#x27;banana&#x27;, &#x27;pear&#x27;, &#x27;apple&#x27;&#125;</span><br><span class="line">&gt;&gt;&gt; &#x27;orange&#x27; in basket                 # 检测成员</span><br><span class="line">True</span><br><span class="line">&gt;&gt;&gt; &#x27;crabgrass&#x27; in basket</span><br><span class="line">False</span><br><span class="line"></span><br><span class="line">&gt;&gt;&gt; # 以下演示了两个集合的操作</span><br><span class="line">...</span><br><span class="line">&gt;&gt;&gt; a = set(&#x27;abracadabra&#x27;)</span><br><span class="line">&gt;&gt;&gt; b = set(&#x27;alacazam&#x27;)</span><br><span class="line">&gt;&gt;&gt; a                                  # a 中唯一的字母</span><br><span class="line">&#123;&#x27;a&#x27;, &#x27;r&#x27;, &#x27;b&#x27;, &#x27;c&#x27;, &#x27;d&#x27;&#125;</span><br><span class="line">&gt;&gt;&gt; a - b                              # 在 a 中的字母，但不在 b 中</span><br><span class="line">&#123;&#x27;r&#x27;, &#x27;d&#x27;, &#x27;b&#x27;&#125;</span><br><span class="line">&gt;&gt;&gt; a | b                              # 在 a 或 b 中的字母</span><br><span class="line">&#123;&#x27;a&#x27;, &#x27;c&#x27;, &#x27;r&#x27;, &#x27;d&#x27;, &#x27;b&#x27;, &#x27;m&#x27;, &#x27;z&#x27;, &#x27;l&#x27;&#125;</span><br><span class="line">&gt;&gt;&gt; a &amp; b                              # 在 a 和 b 中都有的字母</span><br><span class="line">&#123;&#x27;a&#x27;, &#x27;c&#x27;&#125;</span><br><span class="line">&gt;&gt;&gt; a ^ b                              # 在 a 或 b 中的字母，但不同时在 a 和 b 中</span><br><span class="line">&#123;&#x27;r&#x27;, &#x27;d&#x27;, &#x27;b&#x27;, &#x27;m&#x27;, &#x27;z&#x27;, &#x27;l&#x27;&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="模块"><a href="#模块" class="headerlink" title="模块"></a>模块</h3><h4 id="from-a-import-b-语句"><a href="#from-a-import-b-语句" class="headerlink" title="from a import b 语句"></a>from a import b 语句</h4><p>这个声明不会把整个 a 模块导入到当前的命名空间中，它只会将 a 里的 b 函数引入进来。<br>使用 as 关键字为模块或函数起别名：</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">import numpy as np  # 将 numpy 模块别名设置为 np</span><br><span class="line">from math import sqrt as square_root  # 将 sqrt 函数别名设置为 square_root</span><br></pre></td></tr></table></figure>
+
+<h3 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h3><h4 id="re-match函数"><a href="#re-match函数" class="headerlink" title="re.match函数"></a>re.match函数</h4><p>re.match 尝试从字符串的起始位置匹配一个模式，如果不是起始位置匹配成功的话，match() 就返回 None。</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">函数语法：</span><br><span class="line"></span><br><span class="line">re.match(pattern, string, flags=0)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>pattern	匹配的正则表达式</li>
+<li>string	要匹配的字符串。</li>
+<li>flags	标志位，用于控制正则表达式的匹配方式，如：是否区分大小写，多行匹配等等。</li>
+</ul>
+<p>老实了，求放过，改天再约</p>
+<h3 id="文件"><a href="#文件" class="headerlink" title="文件"></a>文件</h3><h3 id="name-和-main-的使用"><a href="#name-和-main-的使用" class="headerlink" title="____name__和__main__的使用"></a>____name__和__main__的使用</h3><p>在 Python 中，常见的做法是在模块的末尾添加以下代码块：</p>
+<p>实例</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">if __name__ == &quot;__main__&quot;:</span><br><span class="line"> #这里的代码只有在模块作为主程序运行时才会执行</span><br><span class="line">main()</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p><strong>name</strong> 是一个内置变量，表示当前模块的名称。</p>
+</li>
+<li><p>当模块作为主程序运行时，<strong>name</strong> 的值是 “<strong>main</strong>“。</p>
+</li>
+<li><p>当模块被导入时，<strong>name</strong> 的值是模块的文件名。</p>
+</li>
+<li><p>使用 if <strong>name</strong> &#x3D;&#x3D; “<strong>main</strong>“: 可以控制模块在被导入时不会执行某些代码，而只有在作为独立脚本运行时才会执行这些代码。</p>
+</li>
+</ul>
 ]]></content>
       <categories>
         <category>学习</category>
@@ -166,53 +191,82 @@
       </tags>
   </entry>
   <entry>
-    <title>java学习</title>
-    <url>/2025/04/29/java%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><h3 id="一、异常语句块处理"><a href="#一、异常语句块处理" class="headerlink" title="一、异常语句块处理"></a>一、异常语句块处理</h3><h4 id="1-自己异常处理"><a href="#1-自己异常处理" class="headerlink" title="1.自己异常处理"></a>1.自己异常处理</h4><p>try cathc语句</p>
-<h4 id="2-单个异常处理"><a href="#2-单个异常处理" class="headerlink" title="2.单个异常处理"></a>2.单个异常处理</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">try&#123;</span><br><span class="line">     //防止肯出现异常的代码</span><br><span class="line">&#125;catch(异常类型 异常名称)&#123;</span><br><span class="line">     //放置处理异常的代码</span><br><span class="line">     &#125;finally&#123;</span><br><span class="line">     //释放资源</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ublic class Exception &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        System.out.println(&quot;第一段码&quot;);</span><br><span class="line">        int i=5;</span><br><span class="line">        try &#123;</span><br><span class="line">            System.out.println(i/0);</span><br><span class="line">        &#125;catch (ArithmeticException e)&#123;</span><br><span class="line">            System.out.println(&quot;除数为0&quot;);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        System.out.println(&quot;第二段码&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>catch捕获的异常要和实际抛出的异常要么一致，要么有继承关系</p>
-<h4 id="3-多个异常处理"><a href="#3-多个异常处理" class="headerlink" title="3.多个异常处理"></a>3.多个异常处理</h4><ul>
-<li>try 块中有多行代码，都有可能出现异常信息，程序执行的时候是从上往下执行的，当碰到异常情况的时候就会跳出try块，<br>从而剩下的就不会执行了</li>
-<li>printStackTrace()方法可以给出详细的异常信息</li>
+    <title>HTML简单总结</title>
+    <url>/2025/04/26/HTML%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<h2 id="HTML基础知识"><a href="#HTML基础知识" class="headerlink" title="HTML基础知识"></a>HTML基础知识</h2><ul>
+<li>HTML 代码是由 “标签” 构成的；</li>
+<li>整体的 HTML 代码是由一对 html 包裹的；</li>
+<li>head 标签是页面的头部，标签中写页面的属性；</li>
+<li>body 标签是页面的主体，标签中写的是页面显示的内容；</li>
+<li>title 标签中写的是页面的标题。</li>
 </ul>
-<h3 id="二、将异常抛出"><a href="#二、将异常抛出" class="headerlink" title="二、将异常抛出"></a>二、将异常抛出</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class Exception &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line"></span><br><span class="line">        try&#123;</span><br><span class="line">            calc();</span><br><span class="line">        &#125;catch (ArithmeticException e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(&quot;第一段码&quot;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static int calc() throws ArithmeticException&#123;</span><br><span class="line">        int a = 10;</span><br><span class="line">        int b = 0;</span><br><span class="line">        int result = a / b;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>throws的使用格式</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[修饰符]返回值类型 方法名(参数列表)[throws 异常1,异常2...]&#123;   &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<ol>
-<li>注意：</li>
-</ol>
-<ul>
-<li>如果一个方法声明的是编译时异常，则在调用这个方法之处必须处置这个异常（谁调用，谁处理）</li>
-<li>异常子类可以抛给父类，父类不能抛给子类</li>
-</ul>
-<ol start="2">
-<li>throws作用：在定义一个方法的时候可以使用throws关键字声明，使用throws关键字声明的方法表示此方法不处理异常，而交给方法的调用者进行处理</li>
-</ol>
-<h3 id="三、throw关键字"><a href="#三、throw关键字" class="headerlink" title="三、throw关键字"></a>三、throw关键字</h3>]]></content>
+<h4 id="默认页面模板：！-tab-生成代码如下"><a href="#默认页面模板：！-tab-生成代码如下" class="headerlink" title="默认页面模板：！+tab,生成代码如下"></a>默认页面模板：！+tab,生成代码如下</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">  &lt;title&gt;Document&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">  </span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="一、常见标签"><a href="#一、常见标签" class="headerlink" title="一、常见标签"></a>一、常见标签</h3><h4 id="1-注释标签"><a href="#1-注释标签" class="headerlink" title="1.注释标签"></a>1.注释标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--我是注释--&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="2-标题标签"><a href="#2-标题标签" class="headerlink" title="2.标题标签"></a>2.标题标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h1&gt;这是一级标签&lt;/h1&gt;</span><br><span class="line">    &lt;h2&gt;这是二级标签&lt;/h2&gt;</span><br><span class="line">    &lt;h3&gt;这是三级标签&lt;/h3&gt;</span><br><span class="line">    &lt;h4&gt;这是四级标签&lt;/h4&gt;</span><br><span class="line">    &lt;h5&gt;这是五级标签&lt;/h5&gt;</span><br><span class="line">    &lt;h6&gt;这是六级标签&lt;/h6&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="3-段落标签"><a href="#3-段落标签" class="headerlink" title="3.段落标签"></a>3.段落标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;p&gt;段落一&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;段落二&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;段落三&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="4-换行标签"><a href="#4-换行标签" class="headerlink" title="4.换行标签"></a>4.换行标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    第一行&lt;br&gt;</span><br><span class="line">    第二行&lt;br&gt;</span><br><span class="line">    第三行&lt;br&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="5-格式化标签"><a href="#5-格式化标签" class="headerlink" title="5.格式化标签"></a>5.格式化标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;strong&gt;加粗&lt;/strong&gt;</span><br><span class="line">    &lt;b&gt;加粗&lt;/b&gt;</span><br><span class="line"></span><br><span class="line">    &lt;em&gt;倾斜&lt;/em&gt;</span><br><span class="line">    &lt;i&gt;倾斜&lt;/i&gt;</span><br><span class="line"></span><br><span class="line">    &lt;del&gt;删除线&lt;/del&gt;</span><br><span class="line">    &lt;s&gt;删除线&lt;/s&gt;</span><br><span class="line"></span><br><span class="line">    &lt;ins&gt;下划线&lt;/ins&gt;</span><br><span class="line">    &lt;u&gt;下划线&lt;/u&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="6-图片标签"><a href="#6-图片标签" class="headerlink" title="6.图片标签"></a>6.图片标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;img src=&quot;相对路径，绝对路径或网络路径&quot; alt=&quot;图片加载错误时的描述信息&quot; width=&quot;宽&quot; height=&quot;高&quot; &gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>注意width 单位是px 像素。</p>
+<h4 id="7-超链接标签"><a href="#7-超链接标签" class="headerlink" title="7.超链接标签"></a>7.超链接标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;a href=&quot;网址&quot;&gt;点击此处跳转&lt;/a&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+<p>超链接标签用<a> </a>来表示，其中的href属性表示点击后会跳转到哪个页面，target表示打开方式，默认是_self，在本标签页打开，如果设置为_blank，则用新的标签页打开。</p>
+<h4 id="8-表格标签"><a href="#8-表格标签" class="headerlink" title="8.表格标签"></a>8.表格标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;table border=&quot;1&quot;&gt;</span><br><span class="line">    &lt;!-- 表头 --&gt;</span><br><span class="line">    &lt;th&gt;列标题1&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;列标题2&lt;/th&gt;    </span><br><span class="line">    &lt;th&gt;列标题3&lt;/th&gt;    </span><br><span class="line">    &lt;th&gt;列标题4&lt;/th&gt;    </span><br><span class="line"> &lt;tr&gt; </span><br><span class="line">    &lt;!-- 每一行都是一个tr标签 --&gt;</span><br><span class="line">     &lt;!-- 每一列都是一个td标签 --&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;欸嘿嘿&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line"></span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;好玩&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;666&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    </span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+
+
+<h4 id="9-列表标签"><a href="#9-列表标签" class="headerlink" title="9.列表标签"></a>9.列表标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!-- 无序列表 --&gt;</span><br><span class="line">  &lt;ul&gt;</span><br><span class="line"></span><br><span class="line">       &lt;li&gt;lalala&lt;/li&gt;</span><br><span class="line">       &lt;li&gt;lalala&lt;/li&gt;</span><br><span class="line">       &lt;li&gt;lalala&lt;/li&gt;</span><br><span class="line">       &lt;li&gt;lalala&lt;/li&gt;</span><br><span class="line"></span><br><span class="line">  &lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">  &lt;!-- 有序列表 --&gt;</span><br><span class="line">  &lt;ol&gt;</span><br><span class="line"></span><br><span class="line">   &lt;li&gt;111111&lt;/li&gt;</span><br><span class="line">   &lt;li&gt;111111&lt;/li&gt;</span><br><span class="line">   </span><br><span class="line">  &lt;/ol&gt;</span><br></pre></td></tr></table></figure>
+<h4 id="10-表单标签"><a href="#10-表单标签" class="headerlink" title="10.表单标签"></a>10.表单标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;form action=&quot;&quot;&gt;</span><br><span class="line">        &lt;label for=&quot;&quot;&gt;用户名：&lt;/label&gt;</span><br><span class="line">        &lt;input type=&quot;text&quot; id=&quot;username&quot;  placeholder=&quot;有点意思&quot;&gt;</span><br><span class="line">        &lt;br&gt;&lt;br&gt;</span><br><span class="line">        &lt;label for=&quot;&quot;&gt;密码：&lt;/label&gt;</span><br><span class="line">        &lt;input type=&quot;password&quot; id=&quot;psw&quot; placeholder=&quot;有点意思&quot;&gt;</span><br><span class="line">        &lt;br&gt;&lt;br&gt;</span><br><span class="line">        &lt;label&gt;性别&lt;/label&gt;</span><br><span class="line">        &lt;input type=&quot;radio&quot; name=&quot;gender&quot;&gt;男    </span><br><span class="line">        &lt;input type=&quot;radio&quot; name=&quot;gender&quot;&gt;女</span><br><span class="line">         &lt;br&gt;</span><br><span class="line">        &lt;label for=&quot;&quot;&gt;爱好&lt;/label&gt;</span><br><span class="line">                          &lt;!-- 通过相同的name使得单选框互斥，构成单选 --&gt;</span><br><span class="line">        &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot;&gt;唱跳</span><br><span class="line">        &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot;&gt;rap</span><br><span class="line">        &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot;&gt;篮球</span><br><span class="line">        &lt;br&gt;&lt;br&gt;</span><br><span class="line">                         &lt;!-- value生成固定字样 --&gt;</span><br><span class="line">        &lt;input type=&quot;submit&quot; value=&quot;上传&quot;&gt;</span><br><span class="line">    &lt;/form&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
+
+
+]]></content>
+      <categories>
+        <category>学习</category>
+      </categories>
+      <tags>
+        <tag>HTML</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2025/03/28/hello-world/</url>
+    <content><![CDATA[<p>这篇博客简述一下整个博客框架的搭建流程，该文本不包括站点信息的配置。流程如下：</p>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>首先我们应该安装Node.js,下载地址如下：<a href="https://nodejs.org/zh-cn/download/">nodejs</a>；<br>安装完成之后我们要确保环境变量配置好，可以正常使用npm命令。</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>Hexo是一个博客框架，其官方还提供了一个命令行工具，可以快速创建项目、页面、编译、部署Hexo博客，接下来我们应该安装Hexo的命令行工具。</p>
+<h3 id="安装命令如下"><a href="#安装命令如下" class="headerlink" title="安装命令如下"></a>安装命令如下</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>安装完成后，确保环境变量配置好，可以正常使用hexo命令。</p>
+<h2 id="用hexo命令行创建项目"><a href="#用hexo命令行创建项目" class="headerlink" title="用hexo命令行创建项目"></a>用hexo命令行创建项目</h2><h3 id="创建新项目"><a href="#创建新项目" class="headerlink" title="创建新项目"></a>创建新项目</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>接下来我们进入新生成的文件夹里，调用hexo的generate命令，这样就将Hexo编译生成HTML代码，命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>然后我们可以通过hexo提供的serve命令使博客在本地运行起来，命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo serve</span><br></pre></td></tr></table></figure>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>那么怎么把这个页面部署到Github Pages上面呢？hexo已经提供了一个命令可以帮助我们将博客一键部署，但是在运用这个命令之前，我们应该安装hexo-deployer-git插件,执行的安装命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save </span><br></pre></td></tr></table></figure>
+<p>安装成功后，执行部署命令；</p>
+<h3 id="执行部署命令"><a href="#执行部署命令" class="headerlink" title="执行部署命令"></a>执行部署命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>这样一来我们的博客就成功部署到 Github Pages 上面了，此时我们已经可以通过访问 Github Repository 的同名链接，就能看到和本地相同的博客内容了。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总而言之该博客的构建并不困难，过程并非复杂繁琐，但对于一个我这样的新手而言仍然需要有足够的耐心去解决一个个奇奇怪怪的小问题，坚持下去就好！</p>
+]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
       <tags>
         <tag>学习</tag>
       </tags>
   </entry>
   <entry>
-    <title>安装Vue.js</title>
-    <url>/2025/04/26/%E5%AE%89%E8%A3%85Vue-js/</url>
-    <content><![CDATA[<h2 id="一、安装过程"><a href="#一、安装过程" class="headerlink" title="一、安装过程"></a>一、安装过程</h2><h3 id="1-安装node-js"><a href="#1-安装node-js" class="headerlink" title="1.安装node.js"></a>1.安装node.js</h3><p>Vue CLI 4.x 需要Node.js 8.9 或更高版本（推荐v10+）。可以使用n、nvm或nvm-windows 在同一台机器上管理多个版本的Node。 如果你不确定系统中正在运行的 Node.js 版本是什么，请在终端窗口中运行 如下命令<br>：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
-<h3 id="2-安装npm"><a href="#2-安装npm" class="headerlink" title="2.安装npm"></a>2.安装npm</h3><p>可以通过这个命令检查是否安装了npm客户端</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-<h3 id="3-安装Vue-CLI新软件包"><a href="#3-安装Vue-CLI新软件包" class="headerlink" title="3.安装Vue CLI新软件包"></a>3.安装Vue CLI新软件包</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g @vue/cli</span><br></pre></td></tr></table></figure>
-<p>你可以通过以下命令检查是否安装成功</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vue --version</span><br></pre></td></tr></table></figure>
-<p>如果你和我一样不小心安装了之前版本，可以用这个命令卸载</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall vue-cli -g</span><br></pre></td></tr></table></figure>
-<h2 id="二、问题总结"><a href="#二、问题总结" class="headerlink" title="二、问题总结"></a>二、问题总结</h2><p>其实在安装了新版本之后，我的vue依旧是安装失败的。此时有可能是npm全局路径没有添加到系统变量，所以我先通过以下命令找到npm全局安装路径<br>。</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config get prefix</span><br></pre></td></tr></table></figure>
-<p>之后我把该路径添加到了系统的PATH变量上，问题就解决了。</p>
+    <title>hello-world-1</title>
+    <url>/2025/04/02/hello-world-1/</url>
+    <content><![CDATA[<h2 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h2><p>抬头一看，整个黑幕布似的天空星星点点的闪烁着，刚开始只能看见一个又一个北斗七星一样的连串的星链。<br>再次出去，从四合院中透过去的方形的天空上，是无数颗斑斓的，跳动的星星，有微弱的细小的闪动着的，也有硕大明亮的，有金黄麦田一样热烈的黄色星星，也有白练雪莲般一样纯洁的，星星的排布是大自然最得意的一笔，细密而又大小不一，间隙而又或明或暗。</p>
+<p><img src="/hello-world-1/222.jpg" alt="222"></p>
+<p>星星大多是连在一起组合成各种各样的形状的，像是轻跃而起的独角兽，又像是弯弯的白船，也有很多零散着的，就那么紧紧靠在一起，那是我从来没有见过的样子。我转着圈，星星就像流动的水一样旋转起来，托着俏皮的尾。我贪婪的疯狂的看着他们，想要尽收眼底，此刻我好像坐在阿尔卑斯雪山上仰望星空，我从来没有离星星这么近过，也从来没有这么真切的感受过他们，我看向那片没有边际却又框在方里的天，黑色的天空已经被星星铺满了，但没有专业设备，只能感叹于她的绚丽闪耀和再多看一眼，希望能在心里留得久些</p>
+<p><img src="/hello-world-1/333.jpg" alt="333"></p>
 ]]></content>
       <categories>
-        <category>学习</category>
+        <category>随笔</category>
       </categories>
+      <tags>
+        <tag>生活</tag>
+      </tags>
   </entry>
   <entry>
     <title>&#39;jingyier-first-blog&#39;</title>
@@ -347,38 +401,91 @@
       </tags>
   </entry>
   <entry>
-    <title>HTML简单总结</title>
-    <url>/2025/04/26/HTML%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93/</url>
-    <content><![CDATA[<h2 id="HTML基础知识"><a href="#HTML基础知识" class="headerlink" title="HTML基础知识"></a>HTML基础知识</h2><ul>
-<li>HTML 代码是由 “标签” 构成的；</li>
-<li>整体的 HTML 代码是由一对 html 包裹的；</li>
-<li>head 标签是页面的头部，标签中写页面的属性；</li>
-<li>body 标签是页面的主体，标签中写的是页面显示的内容；</li>
-<li>title 标签中写的是页面的标题。</li>
+    <title>java学习</title>
+    <url>/2025/04/29/java%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><h3 id="一、异常语句块处理"><a href="#一、异常语句块处理" class="headerlink" title="一、异常语句块处理"></a>一、异常语句块处理</h3><h4 id="1-自己异常处理"><a href="#1-自己异常处理" class="headerlink" title="1.自己异常处理"></a>1.自己异常处理</h4><p>try cathc语句</p>
+<h4 id="2-单个异常处理"><a href="#2-单个异常处理" class="headerlink" title="2.单个异常处理"></a>2.单个异常处理</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">try&#123;</span><br><span class="line">     //防止肯出现异常的代码</span><br><span class="line">&#125;catch(异常类型 异常名称)&#123;</span><br><span class="line">     //放置处理异常的代码</span><br><span class="line">     &#125;finally&#123;</span><br><span class="line">     //释放资源</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ublic class Exception &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        System.out.println(&quot;第一段码&quot;);</span><br><span class="line">        int i=5;</span><br><span class="line">        try &#123;</span><br><span class="line">            System.out.println(i/0);</span><br><span class="line">        &#125;catch (ArithmeticException e)&#123;</span><br><span class="line">            System.out.println(&quot;除数为0&quot;);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        System.out.println(&quot;第二段码&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>catch捕获的异常要和实际抛出的异常要么一致，要么有继承关系</p>
+<h4 id="3-多个异常处理"><a href="#3-多个异常处理" class="headerlink" title="3.多个异常处理"></a>3.多个异常处理</h4><ul>
+<li>try 块中有多行代码，都有可能出现异常信息，程序执行的时候是从上往下执行的，当碰到异常情况的时候就会跳出try块，<br>从而剩下的就不会执行了</li>
+<li>printStackTrace()方法可以给出详细的异常信息</li>
 </ul>
-<h4 id="默认页面模板：！-tab-生成代码如下"><a href="#默认页面模板：！-tab-生成代码如下" class="headerlink" title="默认页面模板：！+tab,生成代码如下"></a>默认页面模板：！+tab,生成代码如下</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html lang=&quot;en&quot;&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">  &lt;meta charset=&quot;UTF-8&quot;&gt;</span><br><span class="line">  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;</span><br><span class="line">  &lt;title&gt;Document&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">  </span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
-<h3 id="一、常见标签"><a href="#一、常见标签" class="headerlink" title="一、常见标签"></a>一、常见标签</h3><h4 id="1-注释标签"><a href="#1-注释标签" class="headerlink" title="1.注释标签"></a>1.注释标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--我是注释--&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="2-标题标签"><a href="#2-标题标签" class="headerlink" title="2.标题标签"></a>2.标题标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;h1&gt;这是一级标签&lt;/h1&gt;</span><br><span class="line">    &lt;h2&gt;这是二级标签&lt;/h2&gt;</span><br><span class="line">    &lt;h3&gt;这是三级标签&lt;/h3&gt;</span><br><span class="line">    &lt;h4&gt;这是四级标签&lt;/h4&gt;</span><br><span class="line">    &lt;h5&gt;这是五级标签&lt;/h5&gt;</span><br><span class="line">    &lt;h6&gt;这是六级标签&lt;/h6&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="3-段落标签"><a href="#3-段落标签" class="headerlink" title="3.段落标签"></a>3.段落标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;p&gt;段落一&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;段落二&lt;/p&gt;</span><br><span class="line">    &lt;p&gt;段落三&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="4-换行标签"><a href="#4-换行标签" class="headerlink" title="4.换行标签"></a>4.换行标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    第一行&lt;br&gt;</span><br><span class="line">    第二行&lt;br&gt;</span><br><span class="line">    第三行&lt;br&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="5-格式化标签"><a href="#5-格式化标签" class="headerlink" title="5.格式化标签"></a>5.格式化标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;strong&gt;加粗&lt;/strong&gt;</span><br><span class="line">    &lt;b&gt;加粗&lt;/b&gt;</span><br><span class="line"></span><br><span class="line">    &lt;em&gt;倾斜&lt;/em&gt;</span><br><span class="line">    &lt;i&gt;倾斜&lt;/i&gt;</span><br><span class="line"></span><br><span class="line">    &lt;del&gt;删除线&lt;/del&gt;</span><br><span class="line">    &lt;s&gt;删除线&lt;/s&gt;</span><br><span class="line"></span><br><span class="line">    &lt;ins&gt;下划线&lt;/ins&gt;</span><br><span class="line">    &lt;u&gt;下划线&lt;/u&gt;</span><br><span class="line"></span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="6-图片标签"><a href="#6-图片标签" class="headerlink" title="6.图片标签"></a>6.图片标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;img src=&quot;相对路径，绝对路径或网络路径&quot; alt=&quot;图片加载错误时的描述信息&quot; width=&quot;宽&quot; height=&quot;高&quot; &gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-<p>注意width 单位是px 像素。</p>
-<h4 id="7-超链接标签"><a href="#7-超链接标签" class="headerlink" title="7.超链接标签"></a>7.超链接标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;a href=&quot;网址&quot;&gt;点击此处跳转&lt;/a&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-<p>超链接标签用<a> </a>来表示，其中的href属性表示点击后会跳转到哪个页面，target表示打开方式，默认是_self，在本标签页打开，如果设置为_blank，则用新的标签页打开。</p>
-<h4 id="8-表格标签"><a href="#8-表格标签" class="headerlink" title="8.表格标签"></a>8.表格标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;table border=&quot;1&quot;&gt;</span><br><span class="line">    &lt;!-- 表头 --&gt;</span><br><span class="line">    &lt;th&gt;列标题1&lt;/th&gt;</span><br><span class="line">    &lt;th&gt;列标题2&lt;/th&gt;    </span><br><span class="line">    &lt;th&gt;列标题3&lt;/th&gt;    </span><br><span class="line">    &lt;th&gt;列标题4&lt;/th&gt;    </span><br><span class="line"> &lt;tr&gt; </span><br><span class="line">    &lt;!-- 每一行都是一个tr标签 --&gt;</span><br><span class="line">     &lt;!-- 每一列都是一个td标签 --&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;欸嘿嘿&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line"></span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;好玩&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    </span><br><span class="line">    &lt;tr&gt;</span><br><span class="line">        &lt;td&gt;666&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line">        &lt;td&gt;444&lt;/td&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/tr&gt;</span><br><span class="line">    </span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
-
-
-<h4 id="9-列表标签"><a href="#9-列表标签" class="headerlink" title="9.列表标签"></a>9.列表标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!-- 无序列表 --&gt;</span><br><span class="line">  &lt;ul&gt;</span><br><span class="line"></span><br><span class="line">       &lt;li&gt;lalala&lt;/li&gt;</span><br><span class="line">       &lt;li&gt;lalala&lt;/li&gt;</span><br><span class="line">       &lt;li&gt;lalala&lt;/li&gt;</span><br><span class="line">       &lt;li&gt;lalala&lt;/li&gt;</span><br><span class="line"></span><br><span class="line">  &lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">  &lt;!-- 有序列表 --&gt;</span><br><span class="line">  &lt;ol&gt;</span><br><span class="line"></span><br><span class="line">   &lt;li&gt;111111&lt;/li&gt;</span><br><span class="line">   &lt;li&gt;111111&lt;/li&gt;</span><br><span class="line">   </span><br><span class="line">  &lt;/ol&gt;</span><br></pre></td></tr></table></figure>
-<h4 id="10-表单标签"><a href="#10-表单标签" class="headerlink" title="10.表单标签"></a>10.表单标签</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;body&gt;</span><br><span class="line">    &lt;form action=&quot;&quot;&gt;</span><br><span class="line">        &lt;label for=&quot;&quot;&gt;用户名：&lt;/label&gt;</span><br><span class="line">        &lt;input type=&quot;text&quot; id=&quot;username&quot;  placeholder=&quot;有点意思&quot;&gt;</span><br><span class="line">        &lt;br&gt;&lt;br&gt;</span><br><span class="line">        &lt;label for=&quot;&quot;&gt;密码：&lt;/label&gt;</span><br><span class="line">        &lt;input type=&quot;password&quot; id=&quot;psw&quot; placeholder=&quot;有点意思&quot;&gt;</span><br><span class="line">        &lt;br&gt;&lt;br&gt;</span><br><span class="line">        &lt;label&gt;性别&lt;/label&gt;</span><br><span class="line">        &lt;input type=&quot;radio&quot; name=&quot;gender&quot;&gt;男    </span><br><span class="line">        &lt;input type=&quot;radio&quot; name=&quot;gender&quot;&gt;女</span><br><span class="line">         &lt;br&gt;</span><br><span class="line">        &lt;label for=&quot;&quot;&gt;爱好&lt;/label&gt;</span><br><span class="line">                          &lt;!-- 通过相同的name使得单选框互斥，构成单选 --&gt;</span><br><span class="line">        &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot;&gt;唱跳</span><br><span class="line">        &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot;&gt;rap</span><br><span class="line">        &lt;input type=&quot;checkbox&quot; name=&quot;hobby&quot;&gt;篮球</span><br><span class="line">        &lt;br&gt;&lt;br&gt;</span><br><span class="line">                         &lt;!-- value生成固定字样 --&gt;</span><br><span class="line">        &lt;input type=&quot;submit&quot; value=&quot;上传&quot;&gt;</span><br><span class="line">    &lt;/form&gt;</span><br><span class="line">&lt;/body&gt;</span><br></pre></td></tr></table></figure>
-
-
+<h3 id="二、将异常抛出"><a href="#二、将异常抛出" class="headerlink" title="二、将异常抛出"></a>二、将异常抛出</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class Exception &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line"></span><br><span class="line">        try&#123;</span><br><span class="line">            calc();</span><br><span class="line">        &#125;catch (ArithmeticException e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(&quot;第一段码&quot;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static int calc() throws ArithmeticException&#123;</span><br><span class="line">        int a = 10;</span><br><span class="line">        int b = 0;</span><br><span class="line">        int result = a / b;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>throws的使用格式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[修饰符]返回值类型 方法名(参数列表)[throws 异常1,异常2...]&#123;   &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ol>
+<li>注意：</li>
+</ol>
+<ul>
+<li>如果一个方法声明的是编译时异常，则在调用这个方法之处必须处置这个异常（谁调用，谁处理）</li>
+<li>异常子类可以抛给父类，父类不能抛给子类</li>
+</ul>
+<ol start="2">
+<li>throws作用：在定义一个方法的时候可以使用throws关键字声明，使用throws关键字声明的方法表示此方法不处理异常，而交给方法的调用者进行处理</li>
+</ol>
+<h3 id="三、throw关键字"><a href="#三、throw关键字" class="headerlink" title="三、throw关键字"></a>三、throw关键字</h3><ul>
+<li>throw用在方法名后面，跟的是异常类名，throw是用在方法体中，跟的是异常对象。</li>
+<li>throws可以跟多个异常类名，用逗号隔开，throw只能抛出一个异常对象</li>
+<li>throws表示抛出异常，由该方法的调用者处理，throw表示抛出异常，由方法体内的语句处理</li>
+<li>throws表示出现异常的可能性，并不一定真的发生这些异常，throw则是抛出了具体的异常，真的产生了一个Expection对象。</li>
+</ul>
+<h3 id="四、finally关键字"><a href="#四、finally关键字" class="headerlink" title="四、finally关键字"></a>四、finally关键字</h3><p>finally修饰的代码一定会执行，除非在finally之前程序异常退出或者调用了系统的退出方法。</p>
+]]></content>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>安装Vue.js</title>
+    <url>/2025/04/26/%E5%AE%89%E8%A3%85Vue-js/</url>
+    <content><![CDATA[<h2 id="一、安装过程"><a href="#一、安装过程" class="headerlink" title="一、安装过程"></a>一、安装过程</h2><h3 id="1-安装node-js"><a href="#1-安装node-js" class="headerlink" title="1.安装node.js"></a>1.安装node.js</h3><p>Vue CLI 4.x 需要Node.js 8.9 或更高版本（推荐v10+）。可以使用n、nvm或nvm-windows 在同一台机器上管理多个版本的Node。 如果你不确定系统中正在运行的 Node.js 版本是什么，请在终端窗口中运行 如下命令<br>：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+<h3 id="2-安装npm"><a href="#2-安装npm" class="headerlink" title="2.安装npm"></a>2.安装npm</h3><p>可以通过这个命令检查是否安装了npm客户端</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<h3 id="3-安装Vue-CLI新软件包"><a href="#3-安装Vue-CLI新软件包" class="headerlink" title="3.安装Vue CLI新软件包"></a>3.安装Vue CLI新软件包</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install -g @vue/cli</span><br></pre></td></tr></table></figure>
+<p>你可以通过以下命令检查是否安装成功</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">vue --version</span><br></pre></td></tr></table></figure>
+<p>如果你和我一样不小心安装了之前版本，可以用这个命令卸载</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm uninstall vue-cli -g</span><br></pre></td></tr></table></figure>
+<h2 id="二、问题总结"><a href="#二、问题总结" class="headerlink" title="二、问题总结"></a>二、问题总结</h2><p>其实在安装了新版本之后，我的vue依旧是安装失败的。此时有可能是npm全局路径没有添加到系统变量，所以我先通过以下命令找到npm全局安装路径<br>。</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config get prefix</span><br></pre></td></tr></table></figure>
+<p>之后我把该路径添加到了系统的PATH变量上，问题就解决了。</p>
 ]]></content>
       <categories>
         <category>学习</category>
       </categories>
+  </entry>
+  <entry>
+    <title>Python_Advanced_exercises</title>
+    <url>/2025/05/01/Python-Advanced-exercises/</url>
+    <content><![CDATA[<h2 id="exercises-笔记"><a href="#exercises-笔记" class="headerlink" title="exercises 笔记"></a>exercises 笔记</h2><h3 id="IOU"><a href="#IOU" class="headerlink" title="IOU"></a>IOU</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def calculate_iou(box1, box2):</span><br><span class="line">    # 计算交集区域的坐标</span><br><span class="line">    x_left = max(box1[0], box2[0])</span><br><span class="line">    y_top = max(box1[1], box2[1])</span><br><span class="line">    x_right = min(box1[2], box2[2])</span><br><span class="line">    y_bottom = min(box1[3], box2[3])</span><br></pre></td></tr></table></figure>
+<p>box是一个矩形，其四个参数两两一组，(box[0],box[1])是矩形左上角的坐标，(box[2],box[3])是矩形右下角的坐标，<br>用max,min函数得到</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 计算交集区域的面积</span><br><span class="line">intersection_width = max(0, x_right - x_left)</span><br><span class="line">intersection_height = max(0, y_bottom - y_top)</span><br><span class="line">intersection_area = intersection_width * intersection_height</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>wight与height为负时box1和box2无交集，用max将其置为0，这样得到的交集面积也为0</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 计算两个框各自的面积</span><br><span class="line">area1 = (box1[2] - box1[0]) * (box1[3] - box1[1])</span><br><span class="line">area2 = (box2[2] - box2[0]) * (box2[3] - box2[1])</span><br><span class="line"></span><br><span class="line"># 计算并集面积</span><br><span class="line">union_area = area1 + area2 - intersection_area</span><br><span class="line"></span><br><span class="line"># 处理并集面积为0的情况（避免除以0）</span><br><span class="line">if union_area == 0:</span><br><span class="line">    return 0.0</span><br><span class="line"></span><br><span class="line"># 计算IoU</span><br><span class="line">iou = intersection_area / union_area</span><br><span class="line">return iou</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
       <tags>
-        <tag>HTML</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>五一假期学习总结</title>
+    <url>/2025/05/05/%E4%BA%94%E4%B8%80%E5%81%87%E6%9C%9F%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</url>
+    <content><![CDATA[<p>本次假期不知道去哪玩，所以选择了留校，第四天的时候狠狠玩了一天，另外每天都是十点起床，这对于平时的日子简直是极大的奢望了。</p>
+<p>在假期内，我主要做了以下工作：</p>
+<ol>
+<li>学习python基本语法；</li>
+<li>学习Java继承和多态（接口练习的不多，还要练），异常处理；</li>
+<li>了解了yolo算法，学习了opencv的基本用法；</li>
+<li>开始学习数据结构，并着力于群友推荐的cs61b。</li>
+<li>初步学习了CSS，HTML</li>
+<li>尝试了MySQL，下载的5.7.32，但是初始密码明明是对的，可是输入后却一直报error 1045 28000 using password yes的错误，在浏览了stack overflow<br>并且使用了ai的操作下，我依旧没能解决问题，便萌生了卸载重新配置的想法，但出于工作量巨大，我准备在暑假完成这个任务。</li>
+</ol>
+<p>讲真我看到太多同龄人有着极高的学习效率，也看了好多他们的总结报告，真的感觉差距非常大。<br>我的迷茫期太长了，我甚至没有利用到上学期寒假和本学期前半学期，时至今日还是小白中的小白。<br>比较尴尬的是我发现cs61b课程卡的要死，而我甚至不会科学上网，于是我就赶紧学了一下，终于在今天早上解决了这个别人那里不算问题的问题。</p>
+<p>在cs学习上，我的天赋并不高。但我会去努力学习，向同辈的佼佼者学习，向优秀的前辈们学习，努力开拓自己的道路。</p>
+]]></content>
+      <tags>
+        <tag>学习</tag>
       </tags>
   </entry>
 </search>
