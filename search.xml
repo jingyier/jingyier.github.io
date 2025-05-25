@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>CS61b</title>
+    <url>/2025/05/05/CS61b/</url>
+    <content><![CDATA[<p>现在开始了CS61b的学习，go go go~</p>
+<p>对于“&#x3D;”，以往的理解是将右值赋值给左值，现在有了新的理解，就是左值指向一个地址</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">int a=5;</span><br><span class="line">    a=b;</span><br></pre></td></tr></table></figure>
+<p>a,b指向相同的地址。</p>
+]]></content>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>4.27起往后一周小结</title>
     <url>/2025/04/27/4-27%E8%B5%B7%E5%BE%80%E5%90%8E%E4%B8%80%E5%91%A8%E5%B0%8F%E7%BB%93/</url>
     <content><![CDATA[<h3 id="4-27"><a href="#4-27" class="headerlink" title="4.27"></a>4.27</h3><p>今天继续学习了Java的继承、多态等等，同时学到了几个好用的快捷键，下面总结一下（ps:继承其实就是共性抽取）：</p>
@@ -191,6 +203,18 @@
       </tags>
   </entry>
   <entry>
+    <title>Python_Advanced_exercises</title>
+    <url>/2025/05/01/Python-Advanced-exercises/</url>
+    <content><![CDATA[<h2 id="exercises-笔记"><a href="#exercises-笔记" class="headerlink" title="exercises 笔记"></a>exercises 笔记</h2><h3 id="IOU"><a href="#IOU" class="headerlink" title="IOU"></a>IOU</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def calculate_iou(box1, box2):</span><br><span class="line">    # 计算交集区域的坐标</span><br><span class="line">    x_left = max(box1[0], box2[0])</span><br><span class="line">    y_top = max(box1[1], box2[1])</span><br><span class="line">    x_right = min(box1[2], box2[2])</span><br><span class="line">    y_bottom = min(box1[3], box2[3])</span><br></pre></td></tr></table></figure>
+<p>box是一个矩形，其四个参数两两一组，(box[0],box[1])是矩形左上角的坐标，(box[2],box[3])是矩形右下角的坐标，<br>用max,min函数得到</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 计算交集区域的面积</span><br><span class="line">intersection_width = max(0, x_right - x_left)</span><br><span class="line">intersection_height = max(0, y_bottom - y_top)</span><br><span class="line">intersection_area = intersection_width * intersection_height</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>wight与height为负时box1和box2无交集，用max将其置为0，这样得到的交集面积也为0</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 计算两个框各自的面积</span><br><span class="line">area1 = (box1[2] - box1[0]) * (box1[3] - box1[1])</span><br><span class="line">area2 = (box2[2] - box2[0]) * (box2[3] - box2[1])</span><br><span class="line"></span><br><span class="line"># 计算并集面积</span><br><span class="line">union_area = area1 + area2 - intersection_area</span><br><span class="line"></span><br><span class="line"># 处理并集面积为0的情况（避免除以0）</span><br><span class="line">if union_area == 0:</span><br><span class="line">    return 0.0</span><br><span class="line"></span><br><span class="line"># 计算IoU</span><br><span class="line">iou = intersection_area / union_area</span><br><span class="line">return iou</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>HTML简单总结</title>
     <url>/2025/04/26/HTML%E7%AE%80%E5%8D%95%E6%80%BB%E7%BB%93/</url>
     <content><![CDATA[<h2 id="HTML基础知识"><a href="#HTML基础知识" class="headerlink" title="HTML基础知识"></a>HTML基础知识</h2><ul>
@@ -226,46 +250,39 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2025/03/28/hello-world/</url>
-    <content><![CDATA[<p>这篇博客简述一下整个博客框架的搭建流程，该文本不包括站点信息的配置。流程如下：</p>
-<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>首先我们应该安装Node.js,下载地址如下：<a href="https://nodejs.org/zh-cn/download/">nodejs</a>；<br>安装完成之后我们要确保环境变量配置好，可以正常使用npm命令。</p>
-<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>Hexo是一个博客框架，其官方还提供了一个命令行工具，可以快速创建项目、页面、编译、部署Hexo博客，接下来我们应该安装Hexo的命令行工具。</p>
-<h3 id="安装命令如下"><a href="#安装命令如下" class="headerlink" title="安装命令如下"></a>安装命令如下</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p>安装完成后，确保环境变量配置好，可以正常使用hexo命令。</p>
-<h2 id="用hexo命令行创建项目"><a href="#用hexo命令行创建项目" class="headerlink" title="用hexo命令行创建项目"></a>用hexo命令行创建项目</h2><h3 id="创建新项目"><a href="#创建新项目" class="headerlink" title="创建新项目"></a>创建新项目</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>接下来我们进入新生成的文件夹里，调用hexo的generate命令，这样就将Hexo编译生成HTML代码，命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>然后我们可以通过hexo提供的serve命令使博客在本地运行起来，命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo serve</span><br></pre></td></tr></table></figure>
-<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>那么怎么把这个页面部署到Github Pages上面呢？hexo已经提供了一个命令可以帮助我们将博客一键部署，但是在运用这个命令之前，我们应该安装hexo-deployer-git插件,执行的安装命令如下：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save </span><br></pre></td></tr></table></figure>
-<p>安装成功后，执行部署命令；</p>
-<h3 id="执行部署命令"><a href="#执行部署命令" class="headerlink" title="执行部署命令"></a>执行部署命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>这样一来我们的博客就成功部署到 Github Pages 上面了，此时我们已经可以通过访问 Github Repository 的同名链接，就能看到和本地相同的博客内容了。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总而言之该博客的构建并不困难，过程并非复杂繁琐，但对于一个我这样的新手而言仍然需要有足够的耐心去解决一个个奇奇怪怪的小问题，坚持下去就好！</p>
+    <title>java学习</title>
+    <url>/2025/04/29/java%E5%AD%A6%E4%B9%A0/</url>
+    <content><![CDATA[<h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><h3 id="一、异常语句块处理"><a href="#一、异常语句块处理" class="headerlink" title="一、异常语句块处理"></a>一、异常语句块处理</h3><h4 id="1-自己异常处理"><a href="#1-自己异常处理" class="headerlink" title="1.自己异常处理"></a>1.自己异常处理</h4><p>try cathc语句</p>
+<h4 id="2-单个异常处理"><a href="#2-单个异常处理" class="headerlink" title="2.单个异常处理"></a>2.单个异常处理</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">try&#123;</span><br><span class="line">     //防止肯出现异常的代码</span><br><span class="line">&#125;catch(异常类型 异常名称)&#123;</span><br><span class="line">     //放置处理异常的代码</span><br><span class="line">     &#125;finally&#123;</span><br><span class="line">     //释放资源</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ublic class Exception &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        System.out.println(&quot;第一段码&quot;);</span><br><span class="line">        int i=5;</span><br><span class="line">        try &#123;</span><br><span class="line">            System.out.println(i/0);</span><br><span class="line">        &#125;catch (ArithmeticException e)&#123;</span><br><span class="line">            System.out.println(&quot;除数为0&quot;);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        System.out.println(&quot;第二段码&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>catch捕获的异常要和实际抛出的异常要么一致，要么有继承关系</p>
+<h4 id="3-多个异常处理"><a href="#3-多个异常处理" class="headerlink" title="3.多个异常处理"></a>3.多个异常处理</h4><ul>
+<li>try 块中有多行代码，都有可能出现异常信息，程序执行的时候是从上往下执行的，当碰到异常情况的时候就会跳出try块，<br>从而剩下的就不会执行了</li>
+<li>printStackTrace()方法可以给出详细的异常信息</li>
+</ul>
+<h3 id="二、将异常抛出"><a href="#二、将异常抛出" class="headerlink" title="二、将异常抛出"></a>二、将异常抛出</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class Exception &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line"></span><br><span class="line">        try&#123;</span><br><span class="line">            calc();</span><br><span class="line">        &#125;catch (ArithmeticException e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(&quot;第一段码&quot;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static int calc() throws ArithmeticException&#123;</span><br><span class="line">        int a = 10;</span><br><span class="line">        int b = 0;</span><br><span class="line">        int result = a / b;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>throws的使用格式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[修饰符]返回值类型 方法名(参数列表)[throws 异常1,异常2...]&#123;   &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ol>
+<li>注意：</li>
+</ol>
+<ul>
+<li>如果一个方法声明的是编译时异常，则在调用这个方法之处必须处置这个异常（谁调用，谁处理）</li>
+<li>异常子类可以抛给父类，父类不能抛给子类</li>
+</ul>
+<ol start="2">
+<li>throws作用：在定义一个方法的时候可以使用throws关键字声明，使用throws关键字声明的方法表示此方法不处理异常，而交给方法的调用者进行处理</li>
+</ol>
+<h3 id="三、throw关键字"><a href="#三、throw关键字" class="headerlink" title="三、throw关键字"></a>三、throw关键字</h3><ul>
+<li>throw用在方法名后面，跟的是异常类名，throw是用在方法体中，跟的是异常对象。</li>
+<li>throws可以跟多个异常类名，用逗号隔开，throw只能抛出一个异常对象</li>
+<li>throws表示抛出异常，由该方法的调用者处理，throw表示抛出异常，由方法体内的语句处理</li>
+<li>throws表示出现异常的可能性，并不一定真的发生这些异常，throw则是抛出了具体的异常，真的产生了一个Expection对象。</li>
+</ul>
+<h3 id="四、finally关键字"><a href="#四、finally关键字" class="headerlink" title="四、finally关键字"></a>四、finally关键字</h3><p>finally修饰的代码一定会执行，除非在finally之前程序异常退出或者调用了系统的退出方法。</p>
 ]]></content>
-      <categories>
-        <category>博客搭建</category>
-      </categories>
       <tags>
         <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>hello-world-1</title>
-    <url>/2025/04/02/hello-world-1/</url>
-    <content><![CDATA[<h2 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h2><p>抬头一看，整个黑幕布似的天空星星点点的闪烁着，刚开始只能看见一个又一个北斗七星一样的连串的星链。<br>再次出去，从四合院中透过去的方形的天空上，是无数颗斑斓的，跳动的星星，有微弱的细小的闪动着的，也有硕大明亮的，有金黄麦田一样热烈的黄色星星，也有白练雪莲般一样纯洁的，星星的排布是大自然最得意的一笔，细密而又大小不一，间隙而又或明或暗。</p>
-<p><img src="/hello-world-1/222.jpg" alt="222"></p>
-<p>星星大多是连在一起组合成各种各样的形状的，像是轻跃而起的独角兽，又像是弯弯的白船，也有很多零散着的，就那么紧紧靠在一起，那是我从来没有见过的样子。我转着圈，星星就像流动的水一样旋转起来，托着俏皮的尾。我贪婪的疯狂的看着他们，想要尽收眼底，此刻我好像坐在阿尔卑斯雪山上仰望星空，我从来没有离星星这么近过，也从来没有这么真切的感受过他们，我看向那片没有边际却又框在方里的天，黑色的天空已经被星星铺满了，但没有专业设备，只能感叹于她的绚丽闪耀和再多看一眼，希望能在心里留得久些</p>
-<p><img src="/hello-world-1/333.jpg" alt="333"></p>
-]]></content>
-      <categories>
-        <category>随笔</category>
-      </categories>
-      <tags>
-        <tag>生活</tag>
       </tags>
   </entry>
   <entry>
@@ -401,42 +418,6 @@
       </tags>
   </entry>
   <entry>
-    <title>java学习</title>
-    <url>/2025/04/29/java%E5%AD%A6%E4%B9%A0/</url>
-    <content><![CDATA[<h2 id="异常处理"><a href="#异常处理" class="headerlink" title="异常处理"></a>异常处理</h2><h3 id="一、异常语句块处理"><a href="#一、异常语句块处理" class="headerlink" title="一、异常语句块处理"></a>一、异常语句块处理</h3><h4 id="1-自己异常处理"><a href="#1-自己异常处理" class="headerlink" title="1.自己异常处理"></a>1.自己异常处理</h4><p>try cathc语句</p>
-<h4 id="2-单个异常处理"><a href="#2-单个异常处理" class="headerlink" title="2.单个异常处理"></a>2.单个异常处理</h4><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">try&#123;</span><br><span class="line">     //防止肯出现异常的代码</span><br><span class="line">&#125;catch(异常类型 异常名称)&#123;</span><br><span class="line">     //放置处理异常的代码</span><br><span class="line">     &#125;finally&#123;</span><br><span class="line">     //释放资源</span><br><span class="line">     &#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">ublic class Exception &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        System.out.println(&quot;第一段码&quot;);</span><br><span class="line">        int i=5;</span><br><span class="line">        try &#123;</span><br><span class="line">            System.out.println(i/0);</span><br><span class="line">        &#125;catch (ArithmeticException e)&#123;</span><br><span class="line">            System.out.println(&quot;除数为0&quot;);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        System.out.println(&quot;第二段码&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>catch捕获的异常要和实际抛出的异常要么一致，要么有继承关系</p>
-<h4 id="3-多个异常处理"><a href="#3-多个异常处理" class="headerlink" title="3.多个异常处理"></a>3.多个异常处理</h4><ul>
-<li>try 块中有多行代码，都有可能出现异常信息，程序执行的时候是从上往下执行的，当碰到异常情况的时候就会跳出try块，<br>从而剩下的就不会执行了</li>
-<li>printStackTrace()方法可以给出详细的异常信息</li>
-</ul>
-<h3 id="二、将异常抛出"><a href="#二、将异常抛出" class="headerlink" title="二、将异常抛出"></a>二、将异常抛出</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">public class Exception &#123;</span><br><span class="line"></span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line"></span><br><span class="line">        try&#123;</span><br><span class="line">            calc();</span><br><span class="line">        &#125;catch (ArithmeticException e)&#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        System.out.println(&quot;第一段码&quot;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public static int calc() throws ArithmeticException&#123;</span><br><span class="line">        int a = 10;</span><br><span class="line">        int b = 0;</span><br><span class="line">        int result = a / b;</span><br><span class="line">        return result;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>throws的使用格式</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[修饰符]返回值类型 方法名(参数列表)[throws 异常1,异常2...]&#123;   &#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<ol>
-<li>注意：</li>
-</ol>
-<ul>
-<li>如果一个方法声明的是编译时异常，则在调用这个方法之处必须处置这个异常（谁调用，谁处理）</li>
-<li>异常子类可以抛给父类，父类不能抛给子类</li>
-</ul>
-<ol start="2">
-<li>throws作用：在定义一个方法的时候可以使用throws关键字声明，使用throws关键字声明的方法表示此方法不处理异常，而交给方法的调用者进行处理</li>
-</ol>
-<h3 id="三、throw关键字"><a href="#三、throw关键字" class="headerlink" title="三、throw关键字"></a>三、throw关键字</h3><ul>
-<li>throw用在方法名后面，跟的是异常类名，throw是用在方法体中，跟的是异常对象。</li>
-<li>throws可以跟多个异常类名，用逗号隔开，throw只能抛出一个异常对象</li>
-<li>throws表示抛出异常，由该方法的调用者处理，throw表示抛出异常，由方法体内的语句处理</li>
-<li>throws表示出现异常的可能性，并不一定真的发生这些异常，throw则是抛出了具体的异常，真的产生了一个Expection对象。</li>
-</ul>
-<h3 id="四、finally关键字"><a href="#四、finally关键字" class="headerlink" title="四、finally关键字"></a>四、finally关键字</h3><p>finally修饰的代码一定会执行，除非在finally之前程序异常退出或者调用了系统的退出方法。</p>
-]]></content>
-      <tags>
-        <tag>学习</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>安装Vue.js</title>
     <url>/2025/04/26/%E5%AE%89%E8%A3%85Vue-js/</url>
     <content><![CDATA[<h2 id="一、安装过程"><a href="#一、安装过程" class="headerlink" title="一、安装过程"></a>一、安装过程</h2><h3 id="1-安装node-js"><a href="#1-安装node-js" class="headerlink" title="1.安装node.js"></a>1.安装node.js</h3><p>Vue CLI 4.x 需要Node.js 8.9 或更高版本（推荐v10+）。可以使用n、nvm或nvm-windows 在同一台机器上管理多个版本的Node。 如果你不确定系统中正在运行的 Node.js 版本是什么，请在终端窗口中运行 如下命令<br>：</p>
@@ -457,15 +438,46 @@
       </categories>
   </entry>
   <entry>
-    <title>Python_Advanced_exercises</title>
-    <url>/2025/05/01/Python-Advanced-exercises/</url>
-    <content><![CDATA[<h2 id="exercises-笔记"><a href="#exercises-笔记" class="headerlink" title="exercises 笔记"></a>exercises 笔记</h2><h3 id="IOU"><a href="#IOU" class="headerlink" title="IOU"></a>IOU</h3><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">def calculate_iou(box1, box2):</span><br><span class="line">    # 计算交集区域的坐标</span><br><span class="line">    x_left = max(box1[0], box2[0])</span><br><span class="line">    y_top = max(box1[1], box2[1])</span><br><span class="line">    x_right = min(box1[2], box2[2])</span><br><span class="line">    y_bottom = min(box1[3], box2[3])</span><br></pre></td></tr></table></figure>
-<p>box是一个矩形，其四个参数两两一组，(box[0],box[1])是矩形左上角的坐标，(box[2],box[3])是矩形右下角的坐标，<br>用max,min函数得到</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 计算交集区域的面积</span><br><span class="line">intersection_width = max(0, x_right - x_left)</span><br><span class="line">intersection_height = max(0, y_bottom - y_top)</span><br><span class="line">intersection_area = intersection_width * intersection_height</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>wight与height为负时box1和box2无交集，用max将其置为0，这样得到的交集面积也为0</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># 计算两个框各自的面积</span><br><span class="line">area1 = (box1[2] - box1[0]) * (box1[3] - box1[1])</span><br><span class="line">area2 = (box2[2] - box2[0]) * (box2[3] - box2[1])</span><br><span class="line"></span><br><span class="line"># 计算并集面积</span><br><span class="line">union_area = area1 + area2 - intersection_area</span><br><span class="line"></span><br><span class="line"># 处理并集面积为0的情况（避免除以0）</span><br><span class="line">if union_area == 0:</span><br><span class="line">    return 0.0</span><br><span class="line"></span><br><span class="line"># 计算IoU</span><br><span class="line">iou = intersection_area / union_area</span><br><span class="line">return iou</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    <title>Hello World</title>
+    <url>/2025/03/28/hello-world/</url>
+    <content><![CDATA[<p>这篇博客简述一下整个博客框架的搭建流程，该文本不包括站点信息的配置。流程如下：</p>
+<h2 id="安装Node-js"><a href="#安装Node-js" class="headerlink" title="安装Node.js"></a>安装Node.js</h2><p>首先我们应该安装Node.js,下载地址如下：<a href="https://nodejs.org/zh-cn/download/">nodejs</a>；<br>安装完成之后我们要确保环境变量配置好，可以正常使用npm命令。</p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>Hexo是一个博客框架，其官方还提供了一个命令行工具，可以快速创建项目、页面、编译、部署Hexo博客，接下来我们应该安装Hexo的命令行工具。</p>
+<h3 id="安装命令如下"><a href="#安装命令如下" class="headerlink" title="安装命令如下"></a>安装命令如下</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<p>安装完成后，确保环境变量配置好，可以正常使用hexo命令。</p>
+<h2 id="用hexo命令行创建项目"><a href="#用hexo命令行创建项目" class="headerlink" title="用hexo命令行创建项目"></a>用hexo命令行创建项目</h2><h3 id="创建新项目"><a href="#创建新项目" class="headerlink" title="创建新项目"></a>创建新项目</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+<p>接下来我们进入新生成的文件夹里，调用hexo的generate命令，这样就将Hexo编译生成HTML代码，命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>然后我们可以通过hexo提供的serve命令使博客在本地运行起来，命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo serve</span><br></pre></td></tr></table></figure>
+<h3 id="部署"><a href="#部署" class="headerlink" title="部署"></a>部署</h3><p>那么怎么把这个页面部署到Github Pages上面呢？hexo已经提供了一个命令可以帮助我们将博客一键部署，但是在运用这个命令之前，我们应该安装hexo-deployer-git插件,执行的安装命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save </span><br></pre></td></tr></table></figure>
+<p>安装成功后，执行部署命令；</p>
+<h3 id="执行部署命令"><a href="#执行部署命令" class="headerlink" title="执行部署命令"></a>执行部署命令</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>这样一来我们的博客就成功部署到 Github Pages 上面了，此时我们已经可以通过访问 Github Repository 的同名链接，就能看到和本地相同的博客内容了。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>总而言之该博客的构建并不困难，过程并非复杂繁琐，但对于一个我这样的新手而言仍然需要有足够的耐心去解决一个个奇奇怪怪的小问题，坚持下去就好！</p>
+]]></content>
+      <categories>
+        <category>博客搭建</category>
+      </categories>
       <tags>
         <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>hello-world-1</title>
+    <url>/2025/04/02/hello-world-1/</url>
+    <content><![CDATA[<h2 id="随笔"><a href="#随笔" class="headerlink" title="随笔"></a>随笔</h2><p>抬头一看，整个黑幕布似的天空星星点点的闪烁着，刚开始只能看见一个又一个北斗七星一样的连串的星链。<br>再次出去，从四合院中透过去的方形的天空上，是无数颗斑斓的，跳动的星星，有微弱的细小的闪动着的，也有硕大明亮的，有金黄麦田一样热烈的黄色星星，也有白练雪莲般一样纯洁的，星星的排布是大自然最得意的一笔，细密而又大小不一，间隙而又或明或暗。</p>
+<p><img src="/hello-world-1/222.jpg" alt="222"></p>
+<p>星星大多是连在一起组合成各种各样的形状的，像是轻跃而起的独角兽，又像是弯弯的白船，也有很多零散着的，就那么紧紧靠在一起，那是我从来没有见过的样子。我转着圈，星星就像流动的水一样旋转起来，托着俏皮的尾。我贪婪的疯狂的看着他们，想要尽收眼底，此刻我好像坐在阿尔卑斯雪山上仰望星空，我从来没有离星星这么近过，也从来没有这么真切的感受过他们，我看向那片没有边际却又框在方里的天，黑色的天空已经被星星铺满了，但没有专业设备，只能感叹于她的绚丽闪耀和再多看一眼，希望能在心里留得久些</p>
+<p><img src="/hello-world-1/333.jpg" alt="333"></p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>生活</tag>
       </tags>
   </entry>
   <entry>

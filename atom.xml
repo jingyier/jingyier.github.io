@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-05-05T08:30:42.210Z</updated>
+  <updated>2025-05-05T12:44:42.429Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -17,11 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>CS61b</title>
+    <link href="http://example.com/2025/05/05/CS61b/"/>
+    <id>http://example.com/2025/05/05/CS61b/</id>
+    <published>2025-05-05T12:40:17.000Z</published>
+    <updated>2025-05-05T12:44:42.429Z</updated>
+    
+    <content type="html"><![CDATA[<p>现在开始了CS61b的学习，go go go~</p><p>对于“&#x3D;”，以往的理解是将右值赋值给左值，现在有了新的理解，就是左值指向一个地址</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int a=5;</span><br><span class="line">    a=b;</span><br></pre></td></tr></table></figure><p>a,b指向相同的地址。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;现在开始了CS61b的学习，go go go~&lt;/p&gt;
+&lt;p&gt;对于“&amp;#x3D;”，以往的理解是将右值赋值给左值，现在有了新的理解，就是左值指向一个地址&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class</summary>
+      
+    
+    
+    
+    
+    <category term="学习" scheme="http://example.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>五一假期学习总结</title>
     <link href="http://example.com/2025/05/05/%E4%BA%94%E4%B8%80%E5%81%87%E6%9C%9F%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/"/>
     <id>http://example.com/2025/05/05/%E4%BA%94%E4%B8%80%E5%81%87%E6%9C%9F%E5%AD%A6%E4%B9%A0%E6%80%BB%E7%BB%93/</id>
     <published>2025-05-05T08:07:26.000Z</published>
-    <updated>2025-05-05T08:30:42.210Z</updated>
+    <updated>2025-05-05T12:39:47.735Z</updated>
     
     <content type="html"><![CDATA[<p>本次假期不知道去哪玩，所以选择了留校，第四天的时候狠狠玩了一天，另外每天都是十点起床，这对于平时的日子简直是极大的奢望了。</p><p>在假期内，我主要做了以下工作：</p><ol><li>学习python基本语法；</li><li>学习Java继承和多态（接口练习的不多，还要练），异常处理；</li><li>了解了yolo算法，学习了opencv的基本用法；</li><li>开始学习数据结构，并着力于群友推荐的cs61b。</li><li>初步学习了CSS，HTML</li><li>尝试了MySQL，下载的5.7.32，但是初始密码明明是对的，可是输入后却一直报error 1045 28000 using password yes的错误，在浏览了stack overflow<br>并且使用了ai的操作下，我依旧没能解决问题，便萌生了卸载重新配置的想法，但出于工作量巨大，我准备在暑假完成这个任务。</li></ol><p>讲真我看到太多同龄人有着极高的学习效率，也看了好多他们的总结报告，真的感觉差距非常大。<br>我的迷茫期太长了，我甚至没有利用到上学期寒假和本学期前半学期，时至今日还是小白中的小白。<br>比较尴尬的是我发现cs61b课程卡的要死，而我甚至不会科学上网，于是我就赶紧学了一下，终于在今天早上解决了这个别人那里不算问题的问题。</p><p>在cs学习上，我的天赋并不高。但我会去努力学习，向同辈的佼佼者学习，向优秀的前辈们学习，努力开拓自己的道路。</p>]]></content>
     
