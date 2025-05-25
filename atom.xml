@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-05-05T12:44:42.429Z</updated>
+  <updated>2025-05-25T04:25:54.213Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>五月小结</title>
+    <link href="http://example.com/2025/05/25/%E4%BA%94%E6%9C%88%E5%B0%8F%E7%BB%93/"/>
+    <id>http://example.com/2025/05/25/%E4%BA%94%E6%9C%88%E5%B0%8F%E7%BB%93/</id>
+    <published>2025-05-25T03:13:55.000Z</published>
+    <updated>2025-05-25T04:25:54.213Z</updated>
+    
+    <content type="html"><![CDATA[<p>本月林林总总尝试了一些新东西（对我而言），整体完成度还是不高。我的能力还是太欠缺了，当务之急恐怕是先提升自己的代码能力吧。</p><p>比较遗憾的是期末考试在即，已经无暇去学习数据结构了，只好把cs61b的课程先放一放。同样的，从现在开始到期末考试结束，任务安排都将会基于考试需求。</p><p>下面总结本月的各种尝试：</p><h3 id="opencv-python"><a href="#opencv-python" class="headerlink" title="opencv-python"></a>opencv-python</h3><p>opencv是计算机视觉经典的专用库，我简单学习了其语法，并自己通过学习教程做了一个小项目。可惜前端基础不够，无法自主构建美观的页面，于是使用AI用gradio构建了一个UI界面。但不知为何，一共有两个UI界面，其中一个始终无法呈现摄像头的拍摄内容，一直处于空白状态，因而该问题暂存（想了挺长时间，可还是无法解决），只能先暂时保留问题了。</p><p>这个项目我放在了github中：</p><p><a href="https://github.com/jingyier/TrajectoryDetection">github</a></p><h3 id="基于qwen大模型的智能问答小助手"><a href="#基于qwen大模型的智能问答小助手" class="headerlink" title="基于qwen大模型的智能问答小助手"></a>基于qwen大模型的智能问答小助手</h3><p>实际上这个以我的水平是做不出来的，但是这是高中同学的小组作业，我对此感觉挺感兴趣，于是准备探索一下。比较好的一点是，像我这样的小白，无论探索什么都好像发现了什么不得了的东西，这当然对我而言也是事实中的事实。</p><h4 id="环境配置"><a href="#环境配置" class="headerlink" title="环境配置"></a>环境配置</h4><p>实际上我最终失败了，但是我觉得还是有必要记录一下过程，万一以后有能力给解决了呢。</p><p>开始在我的印象里，完成这个只需要在我的pycharm环境里安装pytorch的库，然后继续根据需求添加各种需要的东西就好了，事实证明这个想法过于愚蠢了哈哈哈。</p><h5 id="主体过程如下："><a href="#主体过程如下：" class="headerlink" title="主体过程如下："></a>主体过程如下：</h5><p>安装CUDA，cuDNN，Anaconda，pytorch，pycharm，VSCode</p><h5 id="安装cuda"><a href="#安装cuda" class="headerlink" title="安装cuda"></a>安装cuda</h5><p>首先我用这个命令了解系统此时所支持的CUDA最大版本是12.6</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvidia-smi.exe</span><br></pre></td></tr></table></figure><p>然后我下载了11.4版本，完成了安装流程</p><h5 id="安装cudnn"><a href="#安装cudnn" class="headerlink" title="安装cudnn"></a>安装cudnn</h5><p>注册并且下载完成后，打开cudnn后里面有bin，include，lib三个文件夹；而打开上面安装好的CUDA目录，里面也存在bin，include，lib三个文件夹，只要将cudnn中bin，include内的文件全选复制到CUDA中的bin，include内即可</p><p>对于cdnn里的lib文件夹，里面还存在一个x64文件夹，而CUDA中lib文件中存在Win32和x64文件，于是这时把cudnn中lib里打开x64文件夹，拷贝x64文件夹里所有内容到CUDA里lib中x64文件夹中去。</p><p>验证cuda是否安装成功，首先win+R启动cmd，进入到CUDA安装目录下的 …\extras\demo_suite,然后分别运行bandwidthTest.exe和deviceQuery.exe，返回Result&#x3D;PASS表示cuda安装成功。</p><h5 id="安装Anaconda"><a href="#安装Anaconda" class="headerlink" title="安装Anaconda"></a>安装Anaconda</h5><p>在镜像源下载的，网址如下：<br><a href="https://link.zhihu.com/?target=https://mirrors.tuna.tsinghua.edu.cn/anaconda/archive/">anaconda</a></p><p>打开</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">anaconda prompt</span><br></pre></td></tr></table></figure><p>创建环境</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda create --name torch python==3.7</span><br></pre></td></tr></table></figure><p>激活环境</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">conda activate torch</span><br></pre></td></tr></table></figure><h5 id="pytorch安装"><a href="#pytorch安装" class="headerlink" title="pytorch安装"></a>pytorch安装</h5><p>这一步好像就死了。。。</p><p>辗转conda和pip命令多次，辗转各个版本多次，辗转csdn和stackoverflow多次，依旧收获了各种各样的报错，可恶，当时没有吧报错内容记录下来。</p><p>至于pycharm和vscode之前已经安好，不做赘述。<br>很惭愧没有解决问题，最后也只是把ai写的代码提交到github，然后把网址给了我同学，毕竟他们在学校官网上面做这个项目，环境什么的应该没有问题。。。</p><p><a href="https://github.com/jingyier/FAQrobot/tree/master">就是这个，唉</a></p><hr><p>话说回来，感觉无用功居多吧哈哈，只能以失败是成功之母聊以慰藉了，but还是得脚踏实地，总感觉现在路子有点偏，还是先要以提升基础能力为主。</p><h3 id="期末考试小小安排"><a href="#期末考试小小安排" class="headerlink" title="期末考试小小安排"></a>期末考试小小安排</h3><p>现在大部分课程已经接近尾声，现在只好高数线代大物白天刷网课过知识点，晚上做题巩固，Java 看看有没有机会向学长要到前几年真题，看看题型即可。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;本月林林总总尝试了一些新东西（对我而言），整体完成度还是不高。我的能力还是太欠缺了，当务之急恐怕是先提升自己的代码能力吧。&lt;/p&gt;
+&lt;p&gt;比较遗憾的是期末考试在即，已经无暇去学习数据结构了，只好把cs61b的课程先放一放。同样的，从现在开始到期末考试结束，任务安排都将会基于</summary>
+      
+    
+    
+    
+    <category term="学习" scheme="http://example.com/categories/%E5%AD%A6%E4%B9%A0/"/>
+    
+    
+    <category term="python-opencv" scheme="http://example.com/tags/python-opencv/"/>
+    
+  </entry>
   
   <entry>
     <title>CS61b</title>
